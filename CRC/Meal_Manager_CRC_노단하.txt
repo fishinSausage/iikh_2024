@@ -4,6 +4,7 @@ Meal Manager
 Responsibility:  
 displays a calendar(or a piece of calendar)
     * is marked to dates if meal exists within that date
+    
 can select a date using arrow keys
 #?add to grocery list by selecting a number of dates(optional? – done in Date?)#?
 #?print out - optional?#
@@ -12,3 +13,16 @@ Collaborator:
 -Greeter
 -Date  
   
+Private:
+-map<string, Date> meals
+
+Public:
+-addMeal : add meals to specific days
+
+-printMealsForDate : print meals specific day ex)meals.at(date).printDateMeal() //해당 날짜 meal 출력
+
+-displayCalendar : print entire meal calendar ex)Date의 getMeal()
+
+-displayMeals : print meal information for all dates ex)printDateMeal()
+
+-getDate : return Meal for a specific date

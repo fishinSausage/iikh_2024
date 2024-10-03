@@ -9,6 +9,7 @@ Collaborator:
 -Recipe Database Manager  
 -Meal Manager  
 -Grocery List  
+-Meal
 
 Method Descriptions:
 Public:
@@ -20,6 +21,6 @@ Private:
 - handleRecipeDatabase(): Manages functionalities related to the Recipe Database Manager. It either calls the actual Recipe Database Manager functions or executes related code.
                         ex)recipeDatabaseManager.showAllRecipes();
 - handleMealManager(): Manages functionalities related to the Meal Manager. It either calls the actual Meal Manager functions or executes related code.
-                    ex)mealManager.displayMeals();
+                    ex)meal(mealType); / recipeDatabase.searchRecipe(recipeName); / meal.addRecipe(recipe); / mealManager.addMeal(); / mealManager.getDate(date); / ...
 - handleGroceryList(): Manages functionalities related to the Grocery List. It either calls the actual Grocery List functions or executes related code.
-                    ex)groceryList.displayItems();
+                    ex)groceryList.printList();
