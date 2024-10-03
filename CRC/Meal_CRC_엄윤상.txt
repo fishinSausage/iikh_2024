@@ -6,18 +6,59 @@ displays name of that event(meal) and list of Recipes of that meal
     can select recipes using arrow keys
         delete recipes for that meal
         #?should the display of a recipe change according to serving size?#
+            -> want to try it, but I'm not sure if my skill will support it
         #?if recipe is selected and edited -> it has to be updated in the meal too : done by using pointers?#
+            -> it would be okay because it is not responsible for the meal class.(access to recipe DB by using pointers)
 add a recipe to that meal(specify the servings)
     browse(display) the recipe db using recipe database manager’s function
     search&display the recipe db
 print out all the recipes
     use Recipe’s print
+sort recipes by the name
 #?add all the ingredients of that meal to grocery list(optional-done in Dates? #
     #?using recipe’s function -> no need for direct connection with Grocery List)#
+    -> done
 
-Collaborator:  
+Collaborator:
 Date
 Recipe Database Manager
 Recipe
 
-  
+Method Descriptions:
+displayMealInfo()
+    args: null
+    display the name of the meal, the number of people, the list of recipes, \
+    and annotation(if it exists)
+    return: null
+
+addRecipe(Recipe recipe)
+    args: Recipe recipe
+    add the recipe to the recipe list(meal)
+    return: null
+
+deleteRecipeByArrowKeys()
+    args: null
+    delete a particular recipe from the recipe list by index
+    return: null
+
+displayAllRecipes()
+    args: null
+    display all the recipes that the meal includes
+    return: null
+
+sortRecipesByName()
+    args: null
+    sort recipes by the name
+    return: null
+
+addAllIngredientsToGroList()
+    args: null
+    add all the ingredients to the grocery list by using the methods of recipe class
+    return: null
+
+- getter & setter -
+setDate(date), getDate()
+// depending on the data type of the Date class,
+// the data type of the member variable would also be changed.
+setNumGuests(number), getNumGuests()
+setAnnotation(string), getAnnotation()
