@@ -1,23 +1,64 @@
+###############################################################################
+1.add 안에서 browse 와 serach 가 아직 필요하므로 responsibility에 놔두겠습니다
+2.프린터기에 인쇄하는 것도 놔두겠습니다.
+3.delete 를 이 클래스에서 구현하는 것보단, display 함수 안에서 레시피 클래스 자체의 display,edit,delete 메소드를 사용하는게 좋아보이네요 - 근데 제 생각이니까 이부분은 그냥 두겠습니다
+4.sort가 없어도 된다고 생각하네요.
+애매한 부분 ? 추가하고 머지하겠습니다. 코드작성 시작하셔도 좋을거 같습니다, 대신 제가 언급드린 부분이나 아니면 스스로 인터페이스 바꾸신다면 여기에도 수정하고 pull request 해주세요
+################################################################################
+
+
 Component:  
 Meal
 
 Responsibility:  
 displays name of that event(meal) and list of Recipes of that meal
     can select recipes using arrow keys
-        delete recipes for that meal
-        #?should the display of a recipe change according to serving size?#
-        #?if recipe is selected and edited -> it has to be updated in the meal too : done by using pointers?#
+    delete recipes for that meal
+
 add a recipe to that meal(specify the servings)
     browse(display) the recipe db using recipe database manager’s function
     search&display the recipe db
+
 print out all the recipes
     use Recipe’s print
-#?add all the ingredients of that meal to grocery list(optional-done in Dates? #
-    #?using recipe’s function -> no need for direct connection with Grocery List)#
 
-Collaborator:  
+
+Collaborator:
 Date
 Recipe Database Manager
 Recipe
 
-  
+States(member variables):
+std::string name
+unsigned int numGuests
+std::vector<Recipe> recipes
+std::string annotation
+
+Method Descriptions:
+displayMealInfo()
+    args: null
+    display the name of the meal, the number of people, the list of recipes, \
+    and annotation(if it exists)
+    return: null
+
+addRecipe(Recipe recipe)
+    args: Recipe recipe
+    add the recipe to the recipe list(meal)
+    return: null
+
+?
+deleteRecipeByArrowKeys()
+    args: null
+    display the recipe list and delete a particular recipe by the arrow keys
+    return: null
+
+?
+sortRecipesByName()
+    args: null
+    sort recipes by the name
+    return: null
+
+addAllIngredientsToGroceryList()
+    args: null
+    add all the ingredients to the grocery list by using the methods of recipe class
+    return: null
