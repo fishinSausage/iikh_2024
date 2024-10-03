@@ -1,28 +1,25 @@
 Component:  
 Meal Manager
 
-Responsibility:  
-displays a calendar(or a piece of calendar)
-    * is marked to dates if meal exists within that date
-    
-can select a date using arrow keys
-#?add to grocery list by selecting a number of dates(optional? – done in Date?)#?
-#?print out - optional?#
+overall functionality:  
+Plan and manage meals by date
 
 Collaborator:  
 -Greeter
 -Date  
-  
+
+
+Method Descriptions:
 Private:
 -map<string, Date> meals
 
 Public:
--addMeal : add meals to specific days
+-void addMeal(string date, Meal meal) : add meals to specific days
 
--printMealsForDate : print meals specific day ex)meals.at(date).printDateMeal() //해당 날짜 meal 출력
+-void printMealsForDate(string date) : print meals specific day #Meal class에 printDateMeal() 사용, 해당 날짜 meal 출력
 
--displayCalendar : print entire meal calendar ex)Date의 getMeal()
+-void displayCalendar() : print entire meal calendar #Date의 getMeal() 사용
 
--displayMeals : print meal information for all dates ex)printDateMeal()
+-void displayMeals() : print meal information for all dates #Meal class의 printDateMeal() 사용 
 
--getDate : return Meal for a specific date
+-Date* getDate(string date) : return Meal for a specific date #특정 날짜에 대한 Date 객체 반환받음
