@@ -1,0 +1,14 @@
+Component:  
+Meal Manager
+
+Responsibility:  
+displays a calendar(or a piece of calendar)
+    * is marked to dates if meal exists within that date
+can select a date using arrow keys
+#?add to grocery list by selecting a number of dates(optional? – done in Date?)#?
+#?print out - optional?#
+
+Collaborator:  
+-Greeter
+-Date  
+  

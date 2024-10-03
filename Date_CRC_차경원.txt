@@ -1,0 +1,17 @@
+Component:  
+Date
+
+Responsibility:  
+displays a list of meal’s names and number of recipes inside next to the name
+    can select using arrow keys 
+    #?should the inside of that meal be displayed too for user friendliness?#
+add a meal
+add to grocery list of that date(all the meals and all the recipes inside them – using Meal’s operation)
+print out all the meals
+    use Meal’s print
+
+Collaborator:  
+Meal Manager
+Meal 
+
+  

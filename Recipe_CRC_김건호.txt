@@ -1,0 +1,25 @@
+Component:  
+-Recipe  
+
+Responsibility:  
+displays
+    name
+    picture
+        #?use ascii art?#?
+    ingredients
+    serving size
+    estimated time
+    steps
+
+prints out(specify serving size)
+    #?as pdf?#
+edit the recipe
+add to grocery list(specify serving size)
+delete recipe
+#?be added to meal – optional? should be done at meal?#
+
+Collaborator:  
+Recipe Database Manager
+Grocery list
+Meals
+

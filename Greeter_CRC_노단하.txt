@@ -1,0 +1,11 @@
+Component:  
+-Greeter  
+
+Responsibility:  
+-prints out initial greeting msg  
+-selects between Recipe Database Manager and Meal Manger and Grrocery List  
+
+Collaborator:  
+-Recipe Database Manager  
+-Meal Manager  
+-Grocery List  

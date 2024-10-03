@@ -1,0 +1,14 @@
+Component:  
+Grocery List     
+
+Responsibility:  
+displays recipes and total ingredients
+    use display method of recipe
+#?recipe를 arrow key 로 select할 수 있게 연결?#
+print out 
+    #?to pdf?#
+
+Collaborator:  
+-Greeter
+-Recipe  
+  

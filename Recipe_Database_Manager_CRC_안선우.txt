@@ -1,0 +1,15 @@
+Component:  
+-Recipe Database Manager  
+
+Responsibility:  
+-prints out list of names of recipes 
+    #?user can select a recipe using arrow keys?#
+-search a recipe
+-add new recipe
+    make a empty Recipe instance and call edit method
+#?delete(optional? should be done inside recipe?)#
+
+Collaborator:  
+-Greeter
+-Recipe  
+Meal
