@@ -17,7 +17,10 @@ printGreeting(): Outputs the initial greeting message and lists the options (Rec
 selectOption(): Processes the user's input and calls the corresponding method based on the selection.
 
 handleRecipeDatabase(): Manages functionalities related to the Recipe Database Manager. It either calls the actual Recipe Database Manager functions or executes related code.
+                        ex)recipeDatabaseManager.showAllRecipes();
 
 handleMealManager(): Manages functionalities related to the Meal Manager. It either calls the actual Meal Manager functions or executes related code.
+                    ex)mealManager.displayMeals();
 
 handleGroceryList(): Manages functionalities related to the Grocery List. It either calls the actual Grocery List functions or executes related code.
+                    ex)groceryList.displayItems();
