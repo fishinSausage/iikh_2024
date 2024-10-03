@@ -14,12 +14,12 @@ Private:
 -map<string, Date> meals
 
 Public:
--void addMeal(string date, Meal meal) : add meals to specific days
+-void addMeal(string date, Meal meal) : add meals to specific days #meals[date] = Date(date, meal);을 통해 특정 날짜에 Meal 추가
 
--void printMealsForDate(string date) : print meals specific day #Meal class에 printDateMeal() 사용, 해당 날짜 meal 출력
+-void printMealsForDate(string date) : print meals specific day #Meal class의 printDateMeal() 사용, 해당 날짜 meal 출력
 
 -void displayCalendar() : print entire meal calendar #Date의 getMeal() 사용
 
 -void displayMeals() : print meal information for all dates #Meal class의 printDateMeal() 사용 
 
--Date* getDate(string date) : return Meal for a specific date #특정 날짜에 대한 Date 객체 반환받음
+-Date* getDate(string date) : return Meal for a specific date #특정 날짜에 대한 Date 객체 반환받음(Date 객체가 해당 날짜와 그 날짜의 Meal 객체를 포함할 것이기 때문)
