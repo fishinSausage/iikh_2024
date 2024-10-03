@@ -10,7 +10,7 @@ Collaborator:
 -Meal Manager  
 -Grocery List  
 
-Method Descriptions
+Method Descriptions:
 
 printGreeting(): Outputs the initial greeting message and lists the options (Recipe Database Manager, Meal Manager, Grocery List, Exit).
 
