@@ -14,11 +14,14 @@ add_item : add the item object on list
 remove_item : remove the Grocery Item Object from the Grocery List
 update_item : update the Grocery Item Object to control quantity
 display_items : print all groceries on current Grocery List 
-print_pdf : print all groceries and recipe on PDF file
+print_pdf : print all groceries on PDF file
 
 
 Component:
 Grocery Item
+
+Overall Functionality:
+to sotre items as individual dbjects in Grocery List
 
 Method Descriptions:
 * Public :
