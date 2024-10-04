@@ -1,3 +1,11 @@
+###############################################################################################################################
+1. 인수 반환형 설정 했습니다.
+2. 메뉴도 같이 받는게 좋을 것 같네요. Greeter 클래스 구현에서 switch로 나눠서 함수 실행하도록 해놓긴 했는데, 메뉴로 같이 받는게 훨씬 효율적이라 생각합니다. 추가하도록 하겠습니다.
+3. 이름을 배열로 해야될 필요성을 잘 못느끼겠습니다. 어떤 이유로 배열로 구현하셨으면 좋겠는지 설명해주시면 감사하겠습니다.
+그렇게 생각하는 이유는 각 grocery item의 객체들은 고유한 이름을 가지기 때문에, 배열로 구현했을 경우, 여러개의 아이템들이 배열에 동시에 저장되어 여러개의 이름을 가지게 되고, Grocery List로 관리하기 더 힘들어질 것 같네요.
+unit의 경우 사용자에게 단위를 제한하는 정도로 운영하면 될 것 같다고 생각합니다. (예시 : tbsp, g, ml, grind)
+4. Grocery List 하나의 객체에 배열로 모든 아이템을 운영할 계획입니다.
+###############################################################################################################################
 Component:  
 Grocery List     
 
@@ -10,11 +18,12 @@ Collaborator:
 
 Method Descriptions:
 * Public :
-add_item : add the item object on list
-remove_item : remove the Grocery Item Object from the Grocery List
-update_item : update the Grocery Item Object to control quantity
-display_items : print all groceries on current Grocery List 
-print_pdf : print all groceries on PDF file
+void add_item(const GroceryItem & item) : add the item object on list
+void remove_item(const string & item_name) : remove the Grocery Item Object from the Grocery List
+void update_item(string & item_name, float new_quantity) : update the Grocery Item Object to control quantity
+void display_items() : print all groceries on current Grocery List 
+void print_pdf() : print all groceries on PDF file
+void menu_grocerylist() : select each option using the menu function
 * Private :
 vector<GroceryItem> items : a variable called vector-type items that can store multiple GroceryItem objects
 
@@ -22,16 +31,16 @@ Component:
 Grocery Item
 
 Overall Functionality:
-to sotre items as individual dbjects in Grocery List
+to store items as individual dbjects in Grocery List
 
 State
-name(string) : name of grocery
-quantity(float) : amount of grocery
-unit(string) : quantity kind
+string name : name of grocery
+float quantity : amount of grocery
+string unit : quantity kind    * unit limited : pbsp(table spoon), g(gram), ml(milliliter), grind(ex. pepper)
 
 Method Descriptions:
 * Public :
-get_name
-get_Quantity
-get_unit
-set_Quantity
+string get_name() : getter
+float get_Quantity() : getter
+string get_unit() : getter
+void set_Quantity() : to update new quantity
