@@ -1,5 +1,17 @@
+###############################################################################################################
+1.addmeal/printmealsfordate 필요 없어요. display calender에서 안에서 선택한 date의 display 메소드를 호출하면 그 date에 저장된 모든 meal이 출력될건데 왜 여기서 print를 구현하시나요. 또 addmeal도 마찬가지로 date 안의 addmeal 메소드 사용할건데 여기서 왜 구현하시나요.
+2.도저히 어떤 생각으로 구현하실지 감이 안잡히네요. Date쪽이랑 통신해야하니까 그쪽 CRC 봐주세요. 멤버변수랑 getDate도 왜 있는건지 도무지 모르겠네요. 그냥 코드 작성 시작하시고 CRC 수정해나가시면서 그 코드랑 CRC 수정한거 계속 올려주세요. 직접 코드를 봐야지 왜 이렇게 작성하신건지 이해될거같네요
+###############################################################################################################
+
 Component:  
 Meal Manager
+
+Responsibility:  
+displays a calendar(or a piece of calendar)
+    * is marked to dates if meal exists within that date
+can select a date using arrow keys
+#?add to grocery list by selecting a number of dates(optional? – done in Date?)#?
+#?print out - optional?#
 
 overall functionality:  
 Plan and manage meals by date
