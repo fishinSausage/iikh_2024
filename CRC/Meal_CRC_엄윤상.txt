@@ -29,8 +29,8 @@ Recipe Database Manager
 Recipe
 
 States(member variables):
-std::string name
-unsigned int numGuests
+std::string name                     #식사 약속의 이름   
+unsigned int numGuests               #해당 식사 약속에 몇명이 오는지 -> 출력/
 std::vector<Recipe> recipes
 std::string annotation
 
@@ -45,6 +45,10 @@ addRecipe(Recipe recipe)
     args: Recipe recipe
     add the recipe to the recipe list(meal)
     return: null
+
+addToGrocery()
+    add all the recipes and its ingredients to groceylist
+    return null
 
 ?
 deleteRecipeByArrowKeys()
