@@ -2,24 +2,55 @@ Component:
 -Recipe  
 
 Responsibility:  
-displays
-    name
-    picture
-        #?use ascii art?#?
-    ingredients
-    serving size
-    estimated time
-    steps
+delete recipe // recipe_database_manager 에 포함돼야 하는 기능이 아닐까 생각합니다.
 
-prints out(specify serving size)
-    #?as pdf?#
-edit the recipe
-add to grocery list(specify serving size)
-delete recipe
-#?be added to meal – optional? should be done at meal?#
 
 Collaborator:  
 Recipe Database Manager
 Grocery list
 Meals
+
+
+#include "grocery_item.h" // 승준님이 작성한 GroceryItem 포함
+#include "grocery_list.h" // GroceryList 포함
+
+States (member variables):
+
+    std::string name;                // 요리 이름
+    std::string picture;             // 사진 경로 또는 파일 이름
+    std::vector<GroceryItem> ingredients; // 재료 목록 (GroceryItem 객체로 구성)
+    int serving_size;                // 몇 인분 기준
+    int estimated_time;              // 예상 시간 (분 단위)
+    std::vector<std::string> steps;  // 준비 단계
+
+
+
+Method description:
+
+    // 생성자
+    Recipe(std::string name, std::string picture, std::vector<GroceryItem> ingredients, int serving_size, int estimated_time, std::vector<std::string> steps);
+
+    //재료, 준비 단계 제외 출력 함수 => 재료, 준비 단계는 리스트로 이루어져 있다보니 길어질 수도 있을 것 같아 필요한 경우만 출력하도록 수정했습니다.
+    void displayRecipe();
+
+    // 재료 출력 함수
+    void displayIngredients();
+
+    // 준비 단계 출력 함수
+    void displaySteps();
+
+    // 재료 전체를 GroceryList에 추가 (몇 인분 기준으로 조정 => 예를 들어 "계란후라이" 객체이고 1인분 기준 재료가 "계란 1개" 라면 함수의 인자 desired_surving의 값으로 2가 들어온다면 groceryList 에 "계란 2개" 추가함)
+    void addAllgredientsToGroceryList(GroceryList& groceryList, int desired_servings);
+
+    //레시피 수정 함수 => 실행시 1~6 중 하나의 숫자를 입력하게 해서 멤버변수 중 하나를 수정함
+    void editRecipe()
+
+    // getter 함수들
+    std::string getName() const { return name; }
+    std::string getPicture() const { return picture; }
+    int getServingSize() const { return serving_size; }
+    int getEstimatedTime() const { return estimated_time; }
+    std::vector<GroceryItem> getIngredients() const { return ingredients; }
+    std::vector<std::string> getSteps() const { return steps; }
+
 
