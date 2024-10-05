@@ -2,14 +2,37 @@ Component:
 -Recipe Database Manager  
 
 Responsibility:  
--prints out list of names of recipes 
     #?user can select a recipe using arrow keys?#
--search a recipe
--add new recipe
-    make a empty Recipe instance and call edit method
-#?delete(optional? should be done inside recipe?)#
 
 Collaborator:  
 -Greeter
 -Recipe  
 Meal
+Grocery_List
+
+States(member variables):
+
+vector<Recipe> recipes : contain recipes
+
+
+Method Descriptions:
+
+void searchRecipe(string name)
+	args : string name
+	search and print all names of recipes contain specific string
+	return : null
+
+void addRecipe(string name, GroceryItem ingredients, int serving size, int estimated time, int steps)
+	args : string name, GroceryItem ingredients, int serving size, int estimated time, int steps
+	add recipe to DB by make an empty Recipe and call edit method
+	return : null
+
+void deleteRecipe(int index)
+	args : int index
+	delete specific Recipe from DB
+	return : null
+
+void deleteRecipebyName(string name)
+	args : string name
+	delete specific Recipe which has specific name(not contain)
+	return : null
