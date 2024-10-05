@@ -14,4 +14,25 @@ Collaborator:
 Meal Manager
 Meal 
 
+
+
+Method :
+
+displayMeals() {
+    // member로 가지고있는 vector<Meals> 를 for로 돌아서 Meals.displayMealInfo() 호출
+}
+
+AddMeal() {
+    // Meal의 기본 constructor 호출해서 meal 생성
+    // while문으로 가자.
+    // 
+    // ........
+    // vector에 추가.
+}
+
+AddToGrocery() {
+    // for문으로 meals.addTorocery()
+}
+
+
   
