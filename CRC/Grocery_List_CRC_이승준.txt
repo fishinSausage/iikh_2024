@@ -1,10 +1,10 @@
 ###############################################################################################################################
-1. 인수 반환형 설정 했습니다.
-2. 메뉴도 같이 받는게 좋을 것 같네요. Greeter 클래스 구현에서 switch로 나눠서 함수 실행하도록 해놓긴 했는데, 메뉴로 같이 받는게 훨씬 효율적이라 생각합니다. 추가하도록 하겠습니다.
-3. 이름을 배열로 해야될 필요성을 잘 못느끼겠습니다. 어떤 이유로 배열로 구현하셨으면 좋겠는지 설명해주시면 감사하겠습니다.
-그렇게 생각하는 이유는 각 grocery item의 객체들은 고유한 이름을 가지기 때문에, 배열로 구현했을 경우, 여러개의 아이템들이 배열에 동시에 저장되어 여러개의 이름을 가지게 되고, Grocery List로 관리하기 더 힘들어질 것 같네요.
-unit의 경우 사용자에게 단위를 제한하는 정도로 운영하면 될 것 같다고 생각합니다. (예시 : tbsp, g, ml, grind)
-4. Grocery List 하나의 객체에 배열로 모든 아이템을 운영할 계획입니다.
+1.greeter도 만들어서 커밋해주세요 승준씨 .
+0.display가 필요합니다
+2.add 수정했습니다
+2. 레시피 리스트(벡터)
+3.삭제 대신 초기화(전부삭제)
+4.프린터출력
 ###############################################################################################################################
 Component:  
 Grocery List     
@@ -16,31 +16,45 @@ Collaborator:
 -Greeter
 -Recipe  
 
-Method Descriptions:
-* Public :
-void add_item(const GroceryItem & item) : add the item object on list
-void remove_item(const string & item_name) : remove the Grocery Item Object from the Grocery List
-void update_item(string & item_name, float new_quantity) : update the Grocery Item Object to control quantity
-void display_items() : print all groceries on current Grocery List 
-void print_pdf() : print all groceries on PDF file
-void menu_grocerylist() : select each option using the menu function
-* Private :
-vector<GroceryItem> items : a variable called vector-type items that can store multiple GroceryItem objects
-
-Component:
-Grocery Item
-
-Overall Functionality:
-to store items as individual dbjects in Grocery List
-
-State
+State:
+###################################################
+//밑의 add_item을 읽어봐주세요. 요약하자면 이름,unit,양 으로 묶인 하나의 내부 클래스로 있으면 좋겠습니다. 이후 groceryList에는 그 클래스들의 벡터로 구성되어있으면 좋겠습니다. - 만약 수정할 경우, groceryList를 사용하는 다른분들한테도 알려주세요
 string name : name of grocery
 float quantity : amount of grocery
 string unit : quantity kind    * unit limited : pbsp(table spoon), g(gram), ml(milliliter), grind(ex. pepper)
+###################################################
+###################################################
+메뉴이름 - 추가된 재료들의 메뉴 이름도 리스트로 존재하면 좋겠습니다.
+###################################################
+
+
 
 Method Descriptions:
 * Public :
-string get_name() : getter
-float get_Quantity() : getter
-string get_unit() : getter
-void set_Quantity() : to update new quantity
+###################################################
+//greeter에서 아예 control이 넘어와야 하는데, display를 통해 control을 넘겨받아 주세요. 먼저 grocerylist에 존재하는 모든 레시피 이름과 재료이름 + 수량을 화면에 전부 출력해주세요. 이후 함수를 종료하지 말고, while문을 통해 1.toPrinter 2.reset 3.exit 을 사용자가 선택할 수 있게 해줬으면 좋겠습니다. 
+void display()
+###################################################
+
+
+
+###################################################
+//groceryItem에 대한 정보가 제개 없어서 잘은 모르겠지만, 식재료 이름과 대응하는 unit이 붙어있고, 따라서 add_item에는 (이름,양) 이렇게 받으면 좋겠습니다. 아예 가변 인수로 함수를 정의하여 이런식으로 
+ex): list.addItem(카레,(달걀,2),(카레가루,1),(당근,100)) 이런식으로 호출하면, groceryItem에 대응하는 벡터에 알아서 추가되게 (이미 벡터에 존재하면 양이 늘어나고, 없으면 벡터에 새로 추가)하면 어떨까요. 따라서 이름과 unit 과 quantity를 하나로 묶는 내부 클래스가 있으면 어떨까요 (이러면 하나의 벡터만 있으면 됨) 
+void add_item(Recipe recipeName , (ingredientName , quantity),(ingredientName , quantity), ... ) : add the item object on list
+###################################################
+
+###################################################
+//삭제는 너무 복잡해져서 아예 구현안해도 괜찮을것 같습니다.  - 차라리 reset을 구현해주세요
+void reset() - deletes all the ingredients from the list
+###################################################
+
+
+###################################################
+//pdf 라이브러리를 사용하는건 너무 복잡해져서 txt파일로 입출력만 하셔도 무방할거 같습니다. 포매팅은 해주세요
+void print_pdf() : print all groceries on PDF file
+###################################################
+
+* Private :
+vector<GroceryItem> items : a variable called vector-type items that can store multiple GroceryItem objects
+
