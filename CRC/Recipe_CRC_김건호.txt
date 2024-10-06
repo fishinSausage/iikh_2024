@@ -1,7 +1,32 @@
+################################################
+1.레시피 DBMS 뿐만 아니라 MEAL에서도 레시피를 사용해야 하므로 delete는 구현해주셔야 합니다
+2.display 자체가 화면에 그 레시피에 대한 모든걸 보여줘야 하는 함수입니다. 따라서 저렇게 하시면 안됩니다. 내부적으로 여러 함수로 나누는건 상관없지만 인터페이스 용으로는 하나의 함수로 통합해주세요
+3.프린터기에 출력하는 함수도 필요합니다. txt 파일 입출력을 통해 구현하시던지 해주세요
+4. getter 함수는 내부적으로 사용하실 거면 상관 없지만, 인터페이스용으로는 부적합한 것 같습니다. 마찬가지로 제거해주세요
+##############################################
+
 Component:  
 -Recipe  
 
 Responsibility:  
+displays
+    name
+    picture
+        #?use ascii art?#?
+    ingredients
+    serving size
+    estimated time
+    steps
+
+prints out(specify serving size)
+    #?as pdf?#
+
+edit the recipe
+
+add to grocery list(specify serving size)
+
+delete recipe
+
 delete recipe // recipe_database_manager 에 포함돼야 하는 기능이 아닐까 생각합니다.
 
 
