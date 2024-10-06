@@ -1,15 +1,75 @@
+###################################################
+1.레시피 DB 안에 들어있는 모든 레시피를 출력하는 display 함수가 필요합니다
+2.add recipe 수정해주시길 바랍니다
+3.delete는 하나만 있으면 좋을것 같습니다
+4.edit도 구현해주세요
+5.마찬가지로 addToGroceryList도 구현해주세요
+###################################################
+
 Component:  
 -Recipe Database Manager  
-
+  
 Responsibility:  
 -prints out list of names of recipes 
     #?user can select a recipe using arrow keys?#
 -search a recipe
 -add new recipe
     make a empty Recipe instance and call edit method
-#?delete(optional? should be done inside recipe?)#
+-delete
 
 Collaborator:  
 -Greeter
 -Recipe  
 Meal
+Grocery_List
+
+States(member variables):
+
+vector<Recipe> recipes : contain recipes
+
+
+Method Descriptions:
+
+###################################################
+//레시피의 벡터를 for문을 통해 모두 출력 -> 이름만(더 추가적으로 출력하는 것도 ㄱㅊ) 출력해야 하므로 for 문을 통해 레시피의 이름 필드를 갖고오거나 getter를 사용하면 됨
+//display로 시작한 후, 이 함수 안에서 1.search/2.delete/3.edit 을 할 수 있게 while문으로 반복을 돌리면서 사용자 입력을 계속 받으면서 선택할 수 있으면 좋겠습니다.
+void display()
+###################################################
+
+
+void searchRecipe(string name)
+	args : string name
+	search and print all names of recipes contain specific string
+	return : null
+
+###################################################
+//display 안에서 호출되는 함수로써, add가 호출되면, while문을 통해 한줄 한줄씩 유저 인풋을 받으면 좋겠습니다 ex) 이름: -> 조리예상시간: -> 재료1: (단위) -> 재료2: -> ... -> 이미지: (?파일경로?) -> step1: -> step2: -> ... 이런식으로 말입니다
+void addRecipe()
+	add recipe to DB by make an empty Recipe and call edit method
+	return : null
+###################################################
+
+
+
+###################################################
+//마찬가지로 display 안에서 호출될 함수 하나만 있으면 될것 같습니다. 인덱스 보단 유저 인풋으로 레시피 이름을 물어본 후, 이 레시피가 맞냐 보여준 후, y/n을 통해 삭제하면 좋을 것 같습니다
+void deleteRecipe(int index)
+	args : int index
+	delete specific Recipe from DB
+	return : null
+
+void deleteRecipebyName(string name)
+	args : string name
+	delete specific Recipe which has specific name(not contain)
+	return : null
+###################################################
+
+###################################################
+//위의 delete와 크게 다르지 않게 구현하면 될것 같습니다. 해당 레시피를 선택한 후, 그 레시피의 editRecipe를 메소드를 호출하면(레시피의 CRC에 정의되어있음) 거기서 알아서 1~6 선택지를 띄우므로 여기서는 그 메소드를 호출하기만 하면 될거 같습니다
+void editRecipe()
+###################################################
+
+###################################################
+//원래 생각대로는 각각의 레시피를 선택할 수있게 해서, 그 레시피를 선택하면, 그게 display가 된 후, 그 안에서 수정,삭제,addtoGrocery 등등을 하면 좋겠다라고 생각했는데, 선택을 못하는 지금, grocery list에 추가하는 것도 여기서 구현되어야 한다고 생각됩니다. 따라서 위 두 메소드와 비슷하게 구현하시면 될 것 같습니다. 내부적으로는 인풋으로 몇명을 위한 것이냐를 물어본 후, 이후 그 레시피의 addAllgredientsToGroceryList를 호출하면 될 것 같습니다
+void addToGroceryList()
+###################################################
