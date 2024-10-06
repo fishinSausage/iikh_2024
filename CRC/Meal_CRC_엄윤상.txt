@@ -1,3 +1,9 @@
+###################################################
+1.display에 seletct는 구현하지 않으셔도 상관없습니다.
+2.annotation이 string과 같은 거여서 string만 있어도 될 거 같습니다
+3.edit은 구현안하셔도 될것 같습니다. Date에서 자체적으로 name 혹은 numGeust를 수정하도록 하면 될 것 같습니다 
+4.addRecipe 구현 관련해서 코멘트를 추가했습니다
+###################################################
 Component:
 Meal
 
@@ -23,34 +29,42 @@ States(member variables):
 std::string name
 unsigned int numGuests
 std::vector<Recipe> recipes
-std::string annotation
+
 
 Method Descriptions:
+###################################################
+//date에서 dislplay를 호출하면 , 이쪽으로 control이 넘어와, 이 함수 안에서 dipslay 한 후 while문으로 select,add,delete,addtogrocery,exit 을 사용자가 계속 선택할 수 있게 했으면 좋겠습니다. add/delete를 선택했을 경우엔, 유저 입력을 추가로  받아 밀 안에 어떤 레시피를 선택할 지 결정하면 좋겠습니다. 
+//select 의 경우에는 마찬가지로 밀 안에서 존재하는 레시피들 중 하나를 선택하게 입력 받은 후, 그것의 display메소드를 호출하면 될 것 같습니다
 displayAndSelectMealInfoByArrowKeys()
     args: null
-    display the name of the meal, the number of people, the list of recipes, \
-    and annotation(if it exists)
-    Use the arrow keys to select
-        the name so that it can be modified
-        the number of guests so that it can be modified
-        the annotation so that it can be modified
-        the recipe and
-            edit recipe
+    display the name of the meal, the number of people, the name of all recipes,     #레시피의 이름만 n
+            select & call display method on that instance
             remove recipe from the meal
-                and delete it from the recipe_DB if the user wants
+            add to meal
+            add to grocery
+            exit
     return: null
+###################################################
 
+
+###################################################
+//DBMS의 display 를 호출하면 거기로 control이 넘어가 모든게 될 것 같습니다. 근데 한가지 걸리는게 여기서는 search만 필요한데, 거기의 display를 호출하면 add 나 edit같이 여기에 필요없는것 까지 할 수 있게 되어서 그부분이 걸리네요. 혹시 DBMS분한테 연락드려서 display에 parameter를 받을 수 있게 해서 여기서는 인자를 줘서 search만 할 수있게 하던지 하는게 좋을거 같나요?
 addRecipe()
     args: null
     browse recipes in Recipe_Database and add a particular recipe to the meal
     return: null
+###################################################
+
 
 addAllIngredientsToGroceryList()
     args: null
     add all the ingredients to the grocery list by using the methods of recipe class
     return: null
 
+###################################################
+//프린터기에 출력하는 것이므로 텍스트파일 입출력을 활용해 주세요
 printMealInfo()
     args: null
     print all the information of this meal
     return: null
+###################################################
