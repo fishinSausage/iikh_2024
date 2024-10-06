@@ -10,9 +10,21 @@ Collaborator:
 -Meal Manager  
 -Grocery List  
 
+Field:
+RecipeDatabaseManager  #레시피 데이터베이스 매니저 인스턴스를 필드로 가지고있습니다
+MealManager            #밀 매니저 인스턴스도 
+
+
+
+#while문으로 반복을 해서 1번을 누르면 레시피 데이터베이스 매니저의 메소드가 호출이 되고, 2번을 누르면 밀 매니저의 메소드가 호출이 됩니다. 3번은 exit. 반복을 통해서 1번으로 들어갔다가 끝나면 2번도 선택할 수 있게 해주세요.
+#레시피 데이터베이스 매니저의 display 메소드를 호출하면 좋겠습니다
+
+
 Method Descriptions:
 Public:
+
 printGreeting(): Outputs the initial greeting message and lists the options (Recipe Database Manager, Meal Manager, Grocery List, Exit).
+
 
 selectOption(): Processes the user's input and calls the corresponding method based on the selection.
 

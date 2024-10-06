@@ -26,18 +26,18 @@ Recipe Database Manager
 Recipe
 
 States(member variables):
-std::string name
-unsigned int numGuests
+std::string name                     #식사 약속의 이름   
+unsigned int numGuests               #해당 식사 약속에 몇명이 오는지 
 std::vector<Recipe> recipes
 
 
 Method Descriptions:
 ###################################################
-//date에서 dislplay를 호출하면 , 이쪽으로 control이 넘어와, 이 함수 안에서 dipslay 한 후 while문으로 select,add,delete,addtogrocery,exit 을 사용자가 계속 선택할 수 있게 했으면 좋겠습니다. add/delete를 선택했을 경우엔, 유저 입력을 추가로  받아 밀 안에 어떤 레시피를 선택할 지 결정하면 좋겠습니다. 
+//date에서 dislplay를 호출하면 , 이쪽으로 control이 넘어와, 이 함수 안에서 for문을 통해 모든 레시피의 "이름"만 dipslay 한 후 while문으로 select,add,delete,addtogrocery,exit 을 사용자가 계속 선택할 수 있게 했으면 좋겠습니다. add/delete를 선택했을 경우엔, 유저 입력을 추가로  받아 밀 안에 어떤 레시피를 선택할 지 결정하면 좋겠습니다. 
 //select 의 경우에는 마찬가지로 밀 안에서 존재하는 레시피들 중 하나를 선택하게 입력 받은 후, 그것의 display메소드를 호출하면 될 것 같습니다
 displayAndSelectMealInfoByArrowKeys()
     args: null
-    display the name of the meal, the number of people, the name of all recipes,     #레시피의 이름만 n
+    display the name of the meal, the number of people, the name of all recipes,     #밀이름 + 사람수 + 레시피의 이름만 
             select & call display method on that instance
             remove recipe from the meal
             add to meal
@@ -45,6 +45,7 @@ displayAndSelectMealInfoByArrowKeys()
             exit
     return: null
 ###################################################
+
 
 
 ###################################################
