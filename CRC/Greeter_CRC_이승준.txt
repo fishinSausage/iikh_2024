@@ -1,8 +1,10 @@
 Component:  
 -Greeter  
 
-overall functionality:  
-greets the user firstly
+Responsibility:
+prints out initial greeting msg
+selects between Recipe Database Manager and Meal Manger and Grrocery List
+
 
 Collaborator:  
 -Recipe Database Manager  
@@ -11,21 +13,13 @@ Collaborator:
 -Meal
 
 
-Method Descriptions:
-Public:
--void printGreeting(): Outputs the initial greeting message and lists the options (Recipe Database Manager, Meal Manager, Grocery List, Exit).
 
--void selectOption(Meal_Manager mealManager, Grocery_List groceryList, Recipe_Database recipeDatabase): Processes the user's input and calls the corresponding method based on the selection.
-                    #1.레시피 데이터 베이스 출력(모든 레시피 출력), 2.meal_manager 실행(자세한 내용은 아래 handleMealManager 참고), 3.장보기 리스트 출력, 4.모든 식사(meals) 출력, 5.exit
-                        위 내용은 변경될 수 있음
 
-Private:
--void handleRecipeDatabase(Recipe_Database recipeDatabase): Manages functionalities related to the Recipe Database Manager. It either calls the actual Recipe Database Manager functions or executes related code.
-                    #recipeDatabaseManager.showAllRecipes() 사용하여 모든 레시피 출력
 
--void handleMealManager(Meal_Manager mealManager, Recipe_Database recipeDatabase): Manages functionalities related to the Meal Manager. It either calls the actual Meal Manager functions or executes related code.
-                    #meal(mealType); / recipeDatabase.searchRecipe(recipeName); / meal.addRecipe(recipe); / mealManager.addMeal(); / mealManager.getDate(date); / ... 사용하여 
-                        1. Add a new meal 2. Add a recipe to an existing meal(특정 날짜(monday...)와 meal type 정해서 레시피 추가 / 특정 날짜의 meal type(아침, 점심, 저녁)에서의 레시피 수정)
 
--void handleGroceryList(Grocery_List groceryList): Manages functionalities related to the Grocery List. It either calls the actual Grocery List functions or executes related code.
-                    #groceryList.printList() 사용하여 모든 장보기 목록 뽑기
+#while문으로 반복을 해서 1번을 누르면 레시피 데이터베이스 매니저의 메소드가 호출이 되고, 2번을 누르면 밀 매니저의 메소드가 호출이 됩니다. 3번은 exit. 반복을 통해서 1번으로 들어갔다가 끝나면 2번도 선택할 수 있게 해주세요.
+#레시피 데이터베이스 매니저의 display 메소드를 호출하면 좋겠습니다
+#3번은 grocery list입니다
+
+
+
