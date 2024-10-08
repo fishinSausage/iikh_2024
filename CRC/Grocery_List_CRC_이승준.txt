@@ -1,21 +1,29 @@
-###############################################################################################################################
+#############################################################################################################################
 0. greeter도 만들어서 커밋해주세요 승준씨 .
--> 
-1. display가 필요합니다
--> greeter에서 control
-2. add 수정했습니다
-// 밑의 add_item을 읽어봐주세요. 요약하자면 이름,unit,양 으로 묶인 하나의 내부 클래스로 있으면 좋겠습니다. 이후 groceryList에는 그 클래스들의 벡터로 구성되어있으면 좋겠습니다. - 만약 수정할 경우, groceryList를 사용하는 다른분들한테도 알려주세요
--> GroceryItem을 내부 클래스로 구현 ( 이름, 양, 유닛으로 묶임 ), GroceryList는 GroceryItem들을 모아놓은 벡터로 구성하였습니다.
-   add_item 함수는 GroceryList 벡터에 항목 추가.
-   update_item 함수는 Recipe를 입력받아 양 조절 및 항목 추가.
-3. 레시피 리스트(벡터)
--> 추가했습니다.
-4. 삭제 대신 초기화(전부삭제)
--> remove 함수 삭제, reset 함수 구현.
-5. 프린터출력
--> txt 파일로 입출력 (save_to_file, load_from_file)
+-> GroceryList 마무리 하고 바로 시작하겠습니다.
 
-###############################################################################################################################
+1. display가 필요합니다
+-> 일단 레시피 벡터와 식재료 리스트 벡터를 모두 출력하고, 사용자에게 1. 파일저장 2. 리셋 3.파일로드 4.exit을 입력받도록 했고,
+   while 문을 통해 4가 입력되는게 아니라면 반복하도록 해놨습니다.
+   * 정확히 control을 넘겨받는다는게 제어권을 넘겨받아서 display 함수에서 그걸 실행하도록 하라는 의미가 맞나요? 
+     제가 이해한게 맞는지 잘 모르겠습니다.
+
+2. add 수정했습니다
+-> add_item 함수는 GroceryList 벡터에 항목 추가.
+   update_item 함수는 Recipe를 입력받아 양 조절 및 항목 추가.
+
+3. 이름,unit,양 으로 묶인 하나의 내부 클래스로 있으면 좋겠습니다. 이후 groceryList에는 그 클래스들의 벡터로 구성되어있으면 좋겠습니다. - 만약 수정할 경우, groceryList를 사용하는 다른분들한테도 알려주세요
+-> GroceryItem을 내부클래스로 구현 시도 해보았으나, Recipe의 vector<GroceryItem>ingredients를 받아올 때, 참조 오류가 많이 발생하였음. 오히려 따로 구현함으로써 참조 오류 X
+
+4. 레시피 리스트(벡터)
+-> 추가했습니다.
+
+5. 삭제 대신 초기화(전부삭제)
+-> remove 함수 삭제, reset 함수 구현.
+
+6. 프린터출력
+-> txt 파일로 입출력 (save_to_file, load_from_file)
+#############################################################################################################################
 Component:  
 Grocery List     
 
@@ -24,37 +32,23 @@ enables users to manage the groceries they need, add, remove, update, and displa
 
 Collaborator:  
 -Greeter
--Recipe  
-
-State:
-###################################################
-string name : name of grocery
-float quantity : amount of grocery
-string unit : quantity kind          * unit limited : pbsp(table spoon), g(gram), ml(milliliter), grind(ex. pepper)
--> internal class : Grocery Item Class
-###################################################
-
+-Recipe
+-GroceryItem
 
 Method Descriptions:
 * Public :
-###################################################
-//greeter에서 아예 control이 넘어와야 하는데, display를 통해 control을 넘겨받아 주세요. 먼저 grocerylist에 존재하는 모든 레시피 이름과 재료이름 + 수량을 화면에 전부 출력해주세요. 이후 함수를 종료하지 말고, while문을 통해 1.toPrinter 2.reset 3.exit 을 사용자가 선택할 수 있게 해줬으면 좋겠습니다. 
-void display() : print recipe vector in GroceryList and user can choose 1. load from file, 2. reset, 3. save the file 4. exit through while 
-while 문을 통해 1. load from file, 2. reset, 3. save the file 4. exit 을 선택할 수 있게 함.
-###################################################
+
+void display() : print recipe vector and grocerylist vector in GroceryList and 
+user can choose 1. save the file, 2. reset, 3. load from file  4. exit through while repetition.
 
 void add_item(string name, float quantity, string unit) : add the item object on list ( 항목 추가 )
 void update_item(Recipe recipeName, string name, float quantity) : update the amount if food ingredients exist. if not, update the amount after adding the item ( 항목 업데이트 )
-void reset() - deletes all the ingredients from the list ( 현재 Grocery_list 벡터를 초기화, load_from_file 함수 실행시 필요 )
 
+void reset() - deletes all the ingredients from the list ( 현재 Grocery_list 벡터를 초기화, load_from_file 함수 실행시 필요 )
 void save_to_file() : write all groceries on txt file ( txt파일에 현재 groceryList를 저장함 )
 void load_from_file() : load all groceries on txt file ( txt파일에 저장된 GroceryList를 불러옴 )
 
-###################################################
 
 * Private :
 vector<GroceryItem> items : a variable called vector-type items that can store multiple GroceryItem objects ( 추가된 식재료를 저장하는 벡터 )
 vector<Recipe> saved_recipes : a variable called vecotr-type recipes that can store multiple Recipe objects ( 추가된 레시피를 저장하는 벡터 )
-
-Interal class:
-* Public : Grocery Item: one internal class, grouped by name, quantity, and unit
