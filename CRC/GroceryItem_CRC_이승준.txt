@@ -1,0 +1,33 @@
+***************************************************************************************************************************************
+1. 원래 GroceryItem을 GroceryList의 내부 클래스로 구현하려 했으나, 
+   Recipe의 식재료를 받아올 때, 참조 오류가 너무 많이 떠 오히려 따로 클래스를 정의하는게 낫다고 생각했습니다.
+   바꾸고 나서는 오류 발생 X
+2. Recipe 클래스 구현하시는 건호님께는 따로 말씀드렸습니다.
+3. GroceryItem의 기본 설명: GroceryItem은 식재료의 이름과 양, 단위를 가지는 클래스임.
+   GroceryList의 벡터에는 GroceryItem의 객체들이 들어감. 
+***************************************************************************************************************************************
+Class : GroceryItem
+
+Collaborator:  
+- GroceryList
+
+Responsibilities:
+
+ *State*
+- std::string name: name of GroceryItem
+- std::string unit: unit of GroceryItem
+- float quantity: quantity of GroceryItem
+
+Public:
+GroceryItem(std::string name, float quantity, std::string unit) : Constructor of GroceryItem
+
+Method Descriptions:
+* getter *
+- const std::string get_name(): return GroceryItem object's name   
+- float get_quantity(): return GroceryItem object's quantity
+- const std::string get_unit(): return GroceryItem object's unit
+
+void add_quantity(float additional_quantity) :  If the same Grocery Item already exists in the GroceryList vector, just to add the amount
+
+std::string to_file_format() : convert GroceryItem objects to file format.
+static GroceryItem from_file_format(const std::string& line) : convert a string read from a file to a GroceryItem object
