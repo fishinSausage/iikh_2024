@@ -7,24 +7,26 @@ using namespace std;
 class MealManager {
 public:
   // Date 인스턴스의 벡터 (각 날짜에 대한 정보를 저장)
-  vector<Date> dates;
+  vector<Date *> dates;
+
+  MealManager() : dates(31, nullptr) {} // 처음에는 모든 인덱스가 nullptr
 
   // 달력 출력 및 각 작업을 수행할 수 있는 메인 메소드
   void displayCalendar() {
     while (true) {
       cout << "This Month's Calendar" << endl;
-        
-        for (int i = 0; i < 2; ++i) {
-            cout << "   ";  // 첫 번째 날 이전의 빈 공간을 출력합니다.
-        }
-        
+
+      for (int i = 0; i < 2; ++i) {
+        cout << "   "; // 화요일이 1일이므로 두칸 띄고 출력
+      }
+
       for (int i = 0; i < 31; ++i) {
-        if (dates[i].isInitialized()) {
-            if (dates[i].hasmeal()) {
-                cout << (i + 1) << "* ";
-            }
+        if (dates[i] != nullptr) {
+          if (dates[i]->hasmeal()) {
+            cout << (i + 1) << "* ";
+          }
         } else {
-            cout << (i + 1) << " ";
+          cout << (i + 1) << " ";
         }
         if ((i + 3) % 7 == 0) {
           cout << endl; // 7일씩 한 줄로 표시
@@ -66,12 +68,12 @@ public:
     cin >> selectedDate;
 
     // 날짜가 비어있는 경우 새로운 Date 객체 생성하고 추가
-    if (!dates[selectedDate - 1].hasMeal()) {
-      dates[selectedDate - 1] = Date();
+    if (dates[selectedDate - 1] == nullptr) {
+      dates[selectedDate - 1] = new Date();
     }
 
     // 선택한 날짜의 display 호출 (Date 클래스에서 작업 처리)
-    dates[selectedDate - 1].display();
+    dates[selectedDate - 1]->display();
   }
 
   // 특정 기간의 모든 Meal 출력
@@ -81,13 +83,13 @@ public:
     cin >> startDate >> endDate;
 
     for (int i = startDate; i <= endDate; ++i) {
-        if(dates[i - 1].isInitialized()) {
-            if(dates[i - 1].hasMeal()) {
-                dates[i - 1].displayMeals();
-            }
-        } else {
-            cout << "No Meals For This Date" << endl;
+      if (dates[i - 1] != nullptr) {
+        if (dates[i - 1]->hasMeal()) {
+          dates[i - 1]->displayMeals();
         }
+      } else {
+        cout << "No Meals For This Date" << endl;
+      }
     }
   }
 
@@ -102,9 +104,7 @@ public:
 
     // 선택한 날짜 범위 내 모든 Date 인스턴스의 장보기 목록 추가
     for (int i = startDate; i <= endDate; ++i) {
-        if(dates[i - 1].isInitialized()) {
-            dates[i - 1].addToGroceryList(groceryList);
-        }
+      dates[i - 1]->addToGroceryList(groceryList);
     }
 
     // 생성된 장보기 목록 출력

@@ -1,55 +1,33 @@
-###############################################################################################################
-1.흥분해서 죄송합니다. 단하씨의 클래스는 display 안에서 모든 작업이 이뤄져야 하므로, 달력 출력 -> while(1, 2, 3, 4.exit) 을 선택할 수 있게 짜주세요
-###############################################################################################################
+Component:
 
-Component:  
 Meal Manager
 
-Responsibility:  
-displays a calendar(or a piece of calendar)
-    * is marked to dates if meal exists within that date
-can select a date using arrow keys
-#?add to grocery list by selecting a number of dates(optional? – done in Date?)#?
-#?print out - optional?#
+Responsibility:
 
-overall functionality:  
-Plan and manage meals by date
+- 달력을 출력하고 사용자에게 작업 선택을 요청(meal이 존재하는 경우 *표시)
+- 특정 날짜에 대해 새로운 Date 객체를 생성
+- 특정 날짜 또는 범위의 Meal 출력
+- 특정 날짜 또는 범위의 장보기 목록 출력
 
-Collaborator:  
+Collaborators:
+
 -Greeter
--Date  
+-Date
+-GroceryList
 
-###################################################
-State:
-Date 인스턴스의 벡터가 있었으면 좋겠습니다
-###################################################
+Instance Variable:
+
+Public:
+-Date의 인스턴스 벡터
 
 
 Method Descriptions:
+
 Public:
-###################################################
-//이번달에 해당하는 모든 날짜를 달력 형식으로 출력해주세요. 달력에는 날짜만 표시하면 되고, 만약 Date 객체가 존재하고, 해당 객체 안에 Meal필드가 존재하면 날짜 옆에 * 를 붙여서 출력해주세요
-//display를 한 후 , while(날짜를 선택하는 유저 인풋 받고 -> 해당 유저 인풋의 날짜에 대해 display 메소드를 호출하면 됩니다. 이 메소드를 호출하면 control이 Date 클래스로 넘어가므로 아무것도 안하셔도 됩니다. 이후 유저가 해당 Date에서 작업을 마치고 나왔을 시, 다른 날짜를 받을 수 있도록 계속 while문을 돌려주시면 될거같습니다 )
-//빈 날짜를 유저가 선택할 경우 Date객체를 새로 만들어 주세요. 이후 걔에도 display를 호출해야 하는데, 이때는 완전히 빈 객체이므로 Date를 작업하시는 분한테 display에 대한 예외 케이스(empty일 경우) 도 작업해달라고 부탁해주세요
--void displayCalendar() 
-###################################################
+void displayCalendar(): (10월)달력을 출력하며, 각 날짜에 Meal이 있는 경우 * 표시
 
+void selectDate(): 사용자가 선택한 날짜에 대해 Date 객체를 생성하거나 선택된 날짜에 대한 display() 작업 처리
 
-###################################################
-//display함수 안에서 달력을 출력 한 후, 이어지는  while 안에서 1.날짜선택 2. 메뉴프린트 3.grocery list print 를 유저가 선택할 수 있게 해주세요. 1번을 선택했을 시, 위 주석에서 제가 작성한 대로 동작하면 될거 같습니다. 2를 선택한 경우, 날짜를 사용자의 입력으로 받고(시작날짜 - 종료날짜 형식으로 받으면 좋을거 같음) 해당 기간동안의 모든 날짜에 대해서 loop를 돌려서, Date별로 프린트 하는 메소드를 호출하면 될 것 같습니다. - 따라서 Date 클래스의 print 메소드를 loop돌리면서 호출하면 알아서 될 것 같습니다
--void printMealsForDate() : 입력받은 기간동안의 모든 Date의 Meal의 Recipe를 프린트
-###################################################
+void printMealsForDate(): 특정 날짜 범위에 대한 Meal 정보를 출력 (Date 객체가 존재하지 않거나 Date는 존재하나 Meal이 존재하지 않으면 해당 날짜에 Meal이 없음을 출력)
 
-###################################################
-//위에 이어서 3번을 선택하였을 경우, 2번과 마찬가지로 기간을 받은 후, 먼저 새 grocery list를 만들고(이미 사용하고 있는 list가 존재하므로 별개의 작업이 필요), 입력받은 날짜기간에 해당하는 모든 Date 인스턴스의 addtogrocerylist 메소드를 호출하여(for문을 통해 모든 인스턴스의 메소드를 호출) 추가한 후, grocery list 인스턴스의 print 메소드를 사용하면 될 것 같습니다. 이후 출력한 뒤에는 쓸모가 없어지므로 삭제시키면 될것 같습니다
--void printGrocery()
-   user input : start - end
-   new groceryList
-   for loop{
-      date.addToGroceryList   
-   }
-   groceryList.print
-   delete GroceryList
-###################################################
-
-
+void printGrocery(): 특정 날짜 범위에 대한 장보기 목록을 출력
