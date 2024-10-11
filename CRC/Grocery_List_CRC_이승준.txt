@@ -42,8 +42,8 @@ void display() : print recipe vector and grocerylist vector in GroceryList and
 user can choose 1. save the file, 2. reset, 3. load from file  4. exit through while repetition.
 
 void add_item(string name, float quantity, string unit) : add the item object on list ( 항목 추가, update_item에서 사용됨 )
-void update_item(Recipe recipeName) : update the amount if food ingredients exist. if not, update the amount after adding the item ( 항목 업데이트 )
-
+void update_item(const Recipe recipeName) : update the amount if food ingredients exist. if not, update the amount after adding the item ( 항목 업데이트 )
+void remove_item(const Recipe& recipe); remove the amount if food ingredients exist. and remove recipe object in grocerylist ( 항목 제거 )
 void reset_items() - deletes all the ingredients from the list ( 현재 Grocery_list 벡터를 초기화, load_from_file 함수 실행시 필요 )
 void save_to_txt() : write all groceries on txt file ( txt파일에 현재 groceryList를 저장함 )
 void load_from_txt() : load all groceries on txt file ( txt파일에 저장된 GroceryList를 불러옴 )
@@ -52,18 +52,3 @@ void load_from_txt() : load all groceries on txt file ( txt파일에 저장된 G
 * Private :
 vector<GroceryItem> items : a variable called vector-type items that can store multiple GroceryItem objects ( 추가된 식재료를 저장하는 벡터 )
 vector<Recipe> saved_recipes : a variable called vecotr-type recipes that can store multiple Recipe objects ( 추가된 레시피를 저장하는 벡터 )
-
-----------------------------------------------------------------------------------------------------------------------------
-사용하시는 분들 유의사항:
-GroceryList를 사용하시는 분들께 GroceryList 구조에 대해 간단히 설명드리겠습니다.
-GroceryList는 GroceryItem이라는 식재료 클래스를 따로 선언하여 GroceryItem 객체들을 벡터로 가지는 클래스입니다. 
-
-메소드로 add_item, update_item, reset, save_to_txt, load_from_txt들을 가지는데, 
-
-참고하실 내용은 add_item은 사용하지 마시고 update_item(Recipe recipe) 함수를 사용해주세요.
-* update_item에 add_item이 포함됨.
-
-이 update_item 함수는 Recipe 객체를 매개변수로 받으면 Recipe 객체가 가지고 있는 모든 식재료들을 GroceryList 벡터에 저장합니다. 
-
-코드 부분은 곧 올려드리겠습니다.
-혹시 궁금한 점이 있으시면 개인 카톡으로 보내주세요!
