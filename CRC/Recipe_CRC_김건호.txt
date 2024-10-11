@@ -1,8 +1,30 @@
+################################################
+2.display 자체가 화면에 그 레시피에 대한 모든걸 보여줘야 하는 함수입니다. 따라서 저렇게 하시면 안됩니다. 내부적으로 여러 함수로 나누는건 상관없지만 인터페이스 용으로는 하나의 함수로 통합해주세요
+3.프린터기에 출력하는 함수도 필요합니다. txt 파일 입출력을 통해 구현하시던지 해주세요
+4. getter 함수는 내부적으로 사용하실 거면 상관 없지만, 인터페이스용으로는 부적합한 것 같습니다. 마찬가지로 제거해주세요
+##############################################
+
 Component:  
 -Recipe  
 
 Responsibility:  
-delete recipe // recipe_database_manager 에 포함돼야 하는 기능이 아닐까 생각합니다.
+displays
+    name
+    picture
+        #?use ascii art?#?
+    ingredients
+    serving size
+    estimated time
+    steps
+
+prints out(specify serving size)
+    #?as pdf?#
+
+edit the recipe
+
+add to grocery list(specify serving size)
+
+
 
 
 Collaborator:  
@@ -33,11 +55,10 @@ Method description:
     //재료, 준비 단계 제외 출력 함수 => 재료, 준비 단계는 리스트로 이루어져 있다보니 길어질 수도 있을 것 같아 필요한 경우만 출력하도록 수정했습니다.
     void displayRecipe();
 
-    // 재료 출력 함수
-    void displayIngredients();
-
-    // 준비 단계 출력 함수
-    void displaySteps();
+    ##############################################
+    //프린터기에 출력하는 함수 -> 내부에서 txt파일을 만들고 레시피의 모든것을 출력함(포매팅 필요)
+    void printToFile()
+    ##############################################
 
     // 재료 전체를 GroceryList에 추가 (몇 인분 기준으로 조정 => 예를 들어 "계란후라이" 객체이고 1인분 기준 재료가 "계란 1개" 라면 함수의 인자 desired_surving의 값으로 2가 들어온다면 groceryList 에 "계란 2개" 추가함)
     void addAllgredientsToGroceryList(GroceryList& groceryList, int desired_servings);
@@ -45,12 +66,7 @@ Method description:
     //레시피 수정 함수 => 실행시 1~6 중 하나의 숫자를 입력하게 해서 멤버변수 중 하나를 수정함
     void editRecipe()
 
-    // getter 함수들
-    std::string getName() const { return name; }
-    std::string getPicture() const { return picture; }
-    int getServingSize() const { return serving_size; }
-    int getEstimatedTime() const { return estimated_time; }
-    std::vector<GroceryItem> getIngredients() const { return ingredients; }
-    std::vector<std::string> getSteps() const { return steps; }
+
+
 
 
