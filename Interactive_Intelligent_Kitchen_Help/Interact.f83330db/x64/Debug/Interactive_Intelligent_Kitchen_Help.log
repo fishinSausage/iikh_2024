@@ -1,0 +1,86 @@
+﻿  Date.cpp
+  Greeter.cpp
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Greeter.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'Greeter.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryItem.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'Greeter.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'Greeter.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(12,10): error C1083: 포함 파일을 열 수 없습니다. 'Database.cpp': No such file or directory
+  (소스 파일 'Greeter.cpp'을(를) 컴파일하는 중)
+  
+  GroceryItem.cpp
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryItem.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryItem.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'GroceryItem.cpp'을(를) 컴파일하는 중)
+  
+  GroceryList.cpp
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'GroceryList.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryItem.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'GroceryList.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'GroceryList.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(12,10): error C1083: 포함 파일을 열 수 없습니다. 'Database.cpp': No such file or directory
+  (소스 파일 'GroceryList.cpp'을(를) 컴파일하는 중)
+  
+  main.cpp
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryItem.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(12,10): error C1083: 포함 파일을 열 수 없습니다. 'Database.cpp': No such file or directory
+  (소스 파일 'main.cpp'을(를) 컴파일하는 중)
+  
+  Meal_Manager.cpp
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(10,10): error C2065: 'Date': 선언되지 않은 식별자입니다.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(10,16): error C2059: 구문 오류: '>'
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(12,24): error C2439: 'MealManager::dates': 멤버를 초기화할 수 없습니다.
+      C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(10,18):
+      'MealManager::dates' 선언을 참조하십시오.
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(72,37): error C2061: 구문 오류: 식별자 'Date'
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(103,5): error C2065: 'GroceryList': 선언되지 않은 식별자입니다.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(103,17): error C2146: 구문 오류: ';'이(가) 'groceryList' 식별자 앞에 없습니다.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(103,17): error C2065: 'groceryList': 선언되지 않은 식별자입니다.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(107,38): error C2065: 'groceryList': 선언되지 않은 식별자입니다.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Meal_Manager.cpp(111,5): error C2065: 'groceryList': 선언되지 않은 식별자입니다.
+  recipe.cpp
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryItem.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'recipe.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'recipe.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(12,10): error C1083: 포함 파일을 열 수 없습니다. 'Database.cpp': No such file or directory
+  (소스 파일 'recipe.cpp'을(를) 컴파일하는 중)
+  
+  Recipe_Database_Manager.cpp
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\Recipe_Database_Manager.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryItem.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'Recipe_Database_Manager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryItem.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'Recipe_Database_Manager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  (소스 파일 'Recipe_Database_Manager.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\CAU\Downloads\iikh_2024-main\iikh_2024\Interactive_Intelligent_Kitchen_Help\GroceryList.h(12,10): error C1083: 포함 파일을 열 수 없습니다. 'Database.cpp': No such file or directory
+  (소스 파일 'Recipe_Database_Manager.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...

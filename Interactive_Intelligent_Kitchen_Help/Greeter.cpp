@@ -1,6 +1,6 @@
 #include "Greeter.h"
 #include "RecipeDataBase.h"
-#include "MealManager.h"
+#include "Meal_Manager.h"
 #include <iostream>
 
 #include <string>

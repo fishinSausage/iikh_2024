@@ -1,29 +1,32 @@
-#ifndef MEAL_MANAGER_H
-#define MEAL_MANAGER_H
+#ifndef MEALMANAGER_H
+#define MEALMANAGER_H
 
 #include <iostream>
 #include <string>
 #include <vector>
-#include <Date.h>
-#include <GroceryList.h>
+#include "Date.h" // Assuming Date and GroceryList classes are declared in Date.h
+
+using namespace std;
+
+class MealManager {
 public:
-    // Date 인스턴스의 벡터 (각 날짜에 대한 정보를 저장)
+    // Vector of Date pointers (to store information for each date)
     vector<Date*> dates;
 
-    // 생성자
+    // Constructor to initialize 31 date slots, all set to nullptr
     MealManager();
 
-    // 달력 출력 및 각 작업을 수행할 수 있는 메인 메소드
+    // Main method to display the calendar and perform actions
     void displayCalendar();
 
-    // 날짜 선택
+    // Select a date and allow meal management on it
     void selectDate();
 
-    // 특정 기간의 모든 Meal 출력
+    // Print all meals scheduled for a specific date range
     void printMealsForDate();
 
-    // 특정 기간의 장보기 목록 출력
+    // Print grocery list for a specific date range
     void printGrocery();
 };
 
-#endif
+#endif // MEALMANAGER_H
