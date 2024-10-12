@@ -2,27 +2,24 @@
 #include <vector>
 #include <windows.h>
 #include <conio.h>
-#include "GroceryItem.cpp"
-#include "Recipe.cpp"
+#include "GroceryItem.h"
+#include "Recipe.h"
 
 
 
-class Recipe {
-public:
-	std::string name;
-};
 
-class GroceryList {
-
-};
-
-class Database {
+class RecipeDB {
 
 private:
 	std::vector<Recipe> recipes;
-	GroceryList Grocery;
+	GroceryList* Grocery;
 
 public:
+
+	RecipeDB(GroceryList* groceryList) {
+		Grocery = groceryList;
+	};// »ı¼ºÀÚ, GreeterÀÇ GroceryList¸¦ ÂüÁ¶·Î ¹Ş¾Æ¿È
+
 	void display() {
 
 
@@ -34,18 +31,18 @@ public:
 		std::vector<std::string> menu = { "[Search]", "[ Add ]", "[ Exit ]" };
 		std::vector<std::string> names;
 
-		for (int i = 0; i < recipes.size(); i++) { //ê²€ìƒ‰ ë“±ì„ ìœ„í•´, ë ˆì‹œí”¼ ì´ë¦„ë§Œ ëª¨ì•„ í• ë‹¹
-			names.push_back(recipes[i].name);
+		for (int i = 0; i < recipes.size(); i++) { //°Ë»ö µîÀ» À§ÇØ, ·¹½ÃÇÇ ÀÌ¸§¸¸ ¸ğ¾Æ ÇÒ´ç
+			names.push_back(recipes[i].getName());
 		}
 
-		while (1) { //break ì „ê¹Œì§€ ë°˜ë³µ
+		while (1) { //break Àü±îÁö ¹İº¹
 			system("cls");
 			std::cout << "***\n";
 
-			for (int i = 0; i < names.size(); i++) {	//ë ˆì‹œí”¼ ëª©ë¡ì„ í‘œì‹œ
+			for (int i = 0; i < names.size(); i++) {	//·¹½ÃÇÇ ¸ñ·ÏÀ» Ç¥½Ã
 
 				if (isOnMenu == false && i == indexV) {
-					std::cout << names[i] << "â—€" << std::endl;		//ë ˆì‹œí”¼ ëª©ë¡ ì¤‘ í˜„ì¬ ì»¤ì„œ ìœ„ì¹˜ í‘œì‹œ
+					std::cout << names[i] << "¢¸" << std::endl;		//·¹½ÃÇÇ ¸ñ·Ï Áß ÇöÀç Ä¿¼­ À§Ä¡ Ç¥½Ã
 				}
 
 				else {
@@ -53,18 +50,18 @@ public:
 				}
 			}
 
-			if (isSearching) { //ê²€ìƒ‰ ì¤‘ ë’¤ë¡œê°€ê¸° í•­ëª© ì œê³µ
-				std::cout << "Backâ€¦";
-				if (indexV == names.size() && isOnMenu == false) std::cout << "â—€";
+			if (isSearching) { //°Ë»ö Áß µÚ·Î°¡±â Ç×¸ñ Á¦°ø
+				std::cout << "Back¡¦";
+				if (indexV == names.size() && isOnMenu == false) std::cout << "¢¸";
 				std::cout << std::endl;
 			}
 
 			std::cout << "***\n";
 
-			for (int i = 0; i < 3; i++) {	//ë©”ë‰´ ëª©ë¡ì„ í‘œì‹œ
+			for (int i = 0; i < 3; i++) {	//¸Ş´º ¸ñ·ÏÀ» Ç¥½Ã
 
 				if (isOnMenu == true && i == indexH) {
-					std::cout << menu[i] << "â—€ ";		//ë©”ë‰´ ì¤‘ í˜„ì¬ ì»¤ì„œ ìœ„ì¹˜ í‘œì‹œ
+					std::cout << menu[i] << "¢¸ ";		//¸Ş´º Áß ÇöÀç Ä¿¼­ À§Ä¡ Ç¥½Ã
 				}
 
 				else std::cout << menu[i] << "  ";
@@ -76,7 +73,7 @@ public:
 
 			keyInput = _getch();
 			int listSize = names.size();
-			if (isSearching) listSize = names.size() + 1;
+			if (isSearching) listSize = names.size() + 1;	
 
 			if (keyInput == -32) { //arrow
 				switch (_getch()) {
@@ -84,7 +81,7 @@ public:
 					if (indexV > 0 && isOnMenu == false) {
 						indexV--;
 					}
-					else if (isOnMenu == true) { //ë©”ë‰´ ìƒíƒœì—ì„œ ë‚˜ê°€ê¸°
+					else if (isOnMenu == true) {
 						isOnMenu = false;
 					}
 					else indexV = listSize - 1;
@@ -93,17 +90,17 @@ public:
 					if (indexV < listSize - 1) {
 						indexV++;
 					}
-					else if (indexV == listSize - 1) { //ëê¹Œì§€ ë‚´ë ¤ê°€ë©´ ë©”ë‰´ë¡œ ë“¤ì–´ê°€ê¸°
+					else if (indexV == listSize - 1) {
 						isOnMenu = true;
 					}
 					break;
 				case 75: // Left arrow
-					if (indexH > 0 && isOnMenu == true) { //ë©”ë‰´ ìƒíƒœì—ì„œ ì¢Œìš° ì´ë™
+					if (indexH > 0 && isOnMenu == true) {
 						indexH--;
 					}
 					break;
 				case 77: // Right arrow
-					if (indexH < 2 && isOnMenu == true) { //ë©”ë‰´ ìƒíƒœì—ì„œ ì¢Œìš° ì´ë™
+					if (indexH < 2 && isOnMenu == true) {
 						indexH++;
 					}
 					break;
@@ -113,10 +110,10 @@ public:
 
 			else if (keyInput == 13) {
 				if (isOnMenu == false) {
-					if (isSearching == true && indexV == listSize - 1) { //ê²€ìƒ‰ ì¤‘ Backì„ ëˆŒë €ìœ¼ë©´ 
+					if (isSearching == true && indexV == listSize - 1) { //°Ë»ö Áß BackÀ» ´­·¶À¸¸é 
 						names.clear();
-						for (int i = 0; i < recipes.size(); i++) { //ê²€ìƒ‰ ê²°ê³¼ë¡œ í•œì •ë˜ì—ˆë˜ ë°°ì—´ ì´ˆê¸°í™”
-							names.push_back(recipes[i].name);
+						for (int i = 0; i < recipes.size(); i++) { //°Ë»ö °á°ú·Î ÇÑÁ¤µÇ¾ú´ø ¹è¿­ ÃÊ±âÈ­
+							names.push_back(recipes[i].getName());
 						}
 						isSearching = false;
 						isOnMenu = false;
@@ -125,25 +122,25 @@ public:
 					}
 					else {
 
-						int recipeAction = displayRecipe(*searchRecipe(names[indexV])); //ì„ íƒí•œ ì´ë¦„ì„ ê°€ì§„ ë ˆì‹œí”¼ì˜ displayë¥¼ í˜¸ì¶œ. ë ˆì‹œí”¼ë¡œ ì»¨íŠ¸ë¡¤ì´ ë„˜ì–´ê°. ì´í›„ ê±°ê¸°ì„œ ì‚¬ìš©ìê°€ ì„ íƒí•œ ì•¡ì…˜ì— ë”°ë¼ ë¦¬í„´ë¨
+						int recipeAction = (*searchRecipe(names[indexV])).display(); //¼±ÅÃÇÑ ÀÌ¸§À» °¡Áø ·¹½ÃÇÇÀÇ display¸¦ È£Ãâ. ·¹½ÃÇÇ·Î ÄÁÆ®·ÑÀÌ ³Ñ¾î°¨. ÀÌÈÄ °Å±â¼­ »ç¿ëÀÚ°¡ ¼±ÅÃÇÑ ¾×¼Ç¿¡ µû¶ó ¸®ÅÏµÊ
 
-						if (recipeAction < 0) { //ì‚­ì œë¥¼ ì„ íƒí•œ ê²½ìš°
+						if (recipeAction < 0) { //»èÁ¦¸¦ ¼±ÅÃÇÑ °æ¿ì
 							deleteRecipe(names[indexV]);
 						}
-						else if (displayRecipe()>0){ //GroceryListì— ì¶”ê°€í•˜ëŠ” ê²½ìš°. ì´ë•ŒëŠ” ë¦¬í„´ê°’ì´ ì¸ë¶„ ìˆ˜ê°€ ë¨
-							Grocery.update_item(*searchRecipe(names[indexV], recipeAction);
+						else if (recipeAction>0){ //GroceryList¿¡ Ãß°¡ÇÏ´Â °æ¿ì. ÀÌ¶§´Â ¸®ÅÏ°ªÀÌ ÀÎºĞ ¼ö°¡ µÊ
+							(*Grocery).update_item(*searchRecipe(names[indexV]), recipeAction);
 						}
 					}
 
 				}
 
-				else if (indexH == 0) { //Search ì„ íƒ
+				else if (indexH == 0) { //Search ¼±ÅÃ
 
 					std::cout << "Please Enter the Keyword: ";
 					std::string keyWord;
 					std::cin >> keyWord;
 					
-					for (int i = 0; i < names.size(); ) { //í‚¤ì›Œë“œë¥¼ í¬í•¨í•˜ì§€ ì•ŠëŠ” ì´ë¦„ì„ ì „ë¶€ ì‚­ì œ
+					for (int i = 0; i < names.size(); ) { //Å°¿öµå¸¦ Æ÷ÇÔÇÏÁö ¾Ê´Â ÀÌ¸§À» ÀüºÎ »èÁ¦
 						
 						if (names[i].find(keyWord) == std::string::npos) {
 							names.erase(names.begin()+i);
@@ -161,7 +158,7 @@ public:
 
 				}
 
-				else if (indexH == 1) { // Add ì„ íƒ
+				else if (indexH == 1) { // Add ¼±ÅÃ
 
 					std::string recipeName;
 					std::string picture;
@@ -177,7 +174,7 @@ public:
 					std::string step;
 					std::vector<std::string> steps;
 
-					//Recipeì˜ ê° ìš”ì†Œë“¤ì„ ì…ë ¥ë°›ìŒ
+					//RecipeÀÇ °¢ ¿ä¼ÒµéÀ» ÀÔ·Â¹ŞÀ½
 
 					std::cout << "Please Enter Recipe Name\n" << ": ";
 					std::cin >> recipeName;
@@ -186,7 +183,7 @@ public:
 					std::cout << "Please Enter Ingridients Name, Quantity, Unit (ex: Sugar 5 spoon)" << std::endl;
 					std::cout << "If you Entered All Ingridients, Enter 'done'.\n" << ": ";
 
-					while (1){//doneì„ ì…ë ¥ë°›ê¸° ì „ê¹Œì§€ ì—¬ëŸ¬ ì¢…ë¥˜ì˜ ì¬ë£Œë¥¼ ê³„ì† ì…ë ¥ë°›ìŒ
+					while (1){//doneÀ» ÀÔ·Â¹Ş±â Àü±îÁö ¿©·¯ Á¾·ùÀÇ Àç·á¸¦ °è¼Ó ÀÔ·Â¹ŞÀ½
 						std::cin >> groceryName;
 						if (groceryName == "done" || groceryName == "Done") break;
 						std::cin >> groceryQuantity;
@@ -204,19 +201,19 @@ public:
 					std::cout << "Please Enter Cooking Steps." << std::endl;
 					std::cout << "If you Entered All Steps, Enter 'done'.\n" << ": ";
 
-					while (1) { //doneì„ ì…ë ¥ë°›ê¸° ì „ê¹Œì§€ ì¡°ë¦¬ê³¼ì •ì„ ê³„ì† ì…ë ¥ë°›ìŒ
+					while (1) { //doneÀ» ÀÔ·Â¹Ş±â Àü±îÁö Á¶¸®°úÁ¤À» °è¼Ó ÀÔ·Â¹ŞÀ½
 						std::getline(std::cin, step);
 						if (step == "done" || step == "Done") break;
 						steps.push_back(step);
 					}
 
-					addRecipe(Recipe(recipeName, picture, ingridients,servingSize, estimatedTime, steps)); //ì…ë ¥ë°›ì€ ê°’ì„ ë°”íƒ•ìœ¼ë¡œ DBì— ë ˆì‹œí”¼ ì¶”ê°€
+					addRecipe(Recipe(recipeName, picture, servingSize, estimatedTime, ingridients, steps)); //ÀÔ·Â¹ŞÀº °ªÀ» ¹ÙÅÁÀ¸·Î DB¿¡ ·¹½ÃÇÇ Ãß°¡
 
 
 
 				}
 
-				else if (indexH == 2) { //Exit ì„ íƒ
+				else if (indexH == 2) { //Exit ¼±ÅÃ
 					system("cls");
 					break;
 				}
@@ -230,29 +227,29 @@ public:
 
 	}
 
-	void showAll() { //ë ˆì‹œí”¼ ì´ë¦„ ì „ì²´ ì¶œë ¥.
+	void showAll() { //·¹½ÃÇÇ ÀÌ¸§ ÀüÃ¼ Ãâ·Â.
 		system("cls");
 
 		for (auto r : recipes) {
-			std::cout << r.name << '\n';
+			std::cout << r.getName() << '\n';
 		}
 	}
 
-	Recipe* searchRecipe(std::string name) { //ë ˆì‹œí”¼ë¥¼ ê²€ìƒ‰ í›„, í•´ë‹¹ ë ˆì‹œí”¼ì˜ ì£¼ì†Œë¥¼ ë°˜í™˜.
+	Recipe* searchRecipe(std::string name) { //·¹½ÃÇÇ¸¦ °Ë»ö ÈÄ, ÇØ´ç ·¹½ÃÇÇÀÇ ÁÖ¼Ò¸¦ ¹İÈ¯.
 		for (auto r : recipes) {
-			if (r.name == name) {
+			if (r.getName() == name) {
 				return &r;
 			}
 		}
 		return NULL;
 	}
-	void addRecipe(Recipe a) { //DBì— ë ˆì‹œí”¼ ì¶”ê°€
+	void addRecipe(Recipe a) { //DB¿¡ ·¹½ÃÇÇ Ãß°¡
 
 		recipes.push_back(a);
 	}
-	void deleteRecipe(std::string name) { //íŠ¹ì • ì´ë¦„ì˜ ë ˆì‹œí”¼ ì œê±°
+	void deleteRecipe(std::string name) { //Æ¯Á¤ ÀÌ¸§ÀÇ ·¹½ÃÇÇ Á¦°Å
 		for (int i = 0; i < recipes.size(); i++) {
-			if (recipes[i].name == name) {
+			if (recipes[i].getName() == name) {
 				recipes.erase(recipes.begin() + i);
 				break;
 			}

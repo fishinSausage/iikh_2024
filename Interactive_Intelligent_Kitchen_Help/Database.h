@@ -1,3 +1,4 @@
+#pragma once
 #ifndef DATABASE_H
 #define DATABASE_H
 
@@ -5,8 +6,9 @@
 #include <vector>
 #include <windows.h>
 #include <conio.h>
-#include "GroceryList.h"
 #include "Recipe.h"
+
+class GroceryList;
 
 class RecipeDB
 {
@@ -15,7 +17,7 @@ public:
 
 	RecipeDB(GroceryList* groceryList) {
 		Grocery = groceryList;
-	};// 생성자, Greeter의 GroceryList를 참조로 받아옴
+	}// 생성자, Greeter의 GroceryList를 참조로 받아옴
 
 	void display();
 	void showAll();	//전체 출력

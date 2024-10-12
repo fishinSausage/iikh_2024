@@ -18,7 +18,7 @@ int Recipe::display() {
         // 재료 출력
         std::cout << "Ingredients:\n";
         for (const auto& ingredient : ingredients) {
-            std::cout << "- " << ingredient.getName() << " (" << ingredient.getQuantity() << " " << ingredient.getUnit() << ")\n";
+            std::cout << "- " << ingredient.get_name() << " (" << ingredient.get_quantity() << " " << ingredient.get_unit() << ")\n";
         }
 
         // 준비 단계 출력
@@ -80,7 +80,7 @@ int Recipe::display() {
 void Recipe::displayIngredients() {
     std::cout << "Ingredients for " << name << " (" << serving_size << " servings):\n";
     for (const auto& ingredient : ingredients) {
-        std::cout << "- " << ingredient.getName() << " (" << ingredient.getQuantity() << " " << ingredient.getUnit() << ")\n";
+        std::cout << "- " << ingredient.get_name() << " (" << ingredient.get_quantity() << " " << ingredient.get_unit() << ")\n";
     }
 }
 
@@ -198,7 +198,7 @@ void Recipe::printToFile(const std::string& filename) {
     // 재료 출력
     file << "Ingredients:\n";
     for (const auto& ingredient : ingredients) {
-        file << "- " << ingredient.getName() << " (" << ingredient.getQuantity() << " " << ingredient.getUnit() << ")\n";
+        file << "- " << ingredient.get_name() << " (" << ingredient.get_quantity() << " " << ingredient.get_unit() << ")\n";
     }
 
     // 준비 단계 출력

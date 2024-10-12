@@ -2,8 +2,8 @@
 #define GREETER_H
 
 #include "GroceryList.h"
-#include "RecipeDataBase.h"
-#include "Meal_Manager.h"
+#include "Database.h"
+#include "Meal_Manager.cpp"
 #include <iostream>
 #include <conio.h>
 class Greeter
