@@ -1,14 +1,33 @@
-Component:  
+Component:
+
 Meal Manager
 
-Responsibility:  
-displays a calendar(or a piece of calendar)
-    * is marked to dates if meal exists within that date
-can select a date using arrow keys
-#?add to grocery list by selecting a number of dates(optional? – done in Date?)#?
-#?print out - optional?#
+Responsibility:
 
-Collaborator:  
+- 달력을 출력하고 사용자에게 작업 선택을 요청(meal이 존재하는 경우 *표시)
+- 특정 날짜에 대해 새로운 Date 객체를 생성
+- 특정 날짜 또는 범위의 Meal 출력
+- 특정 날짜 또는 범위의 장보기 목록 출력
+
+Collaborators:
+
 -Greeter
--Date  
-  
+-Date
+-GroceryList
+
+Instance Variable:
+
+Public:
+-Date의 인스턴스 벡터
+
+
+Method Descriptions:
+
+Public:
+void displayCalendar(): (10월)달력을 출력하며, 각 날짜에 Meal이 있는 경우 * 표시
+
+void selectDate(): 사용자가 선택한 날짜에 대해 Date 객체를 생성하거나 선택된 날짜에 대한 display() 작업 처리
+
+void printMealsForDate(): 특정 날짜 범위에 대한 Meal 정보를 출력 (Date 객체가 존재하지 않거나 Date는 존재하나 Meal이 존재하지 않으면 해당 날짜에 Meal이 없음을 출력)
+
+void printGrocery(): 특정 날짜 범위에 대한 장보기 목록을 출력
