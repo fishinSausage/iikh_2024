@@ -19,7 +19,7 @@
 -> 추가했습니다.
 
 5. 삭제 대신 초기화(전부삭제)
--> remove 함수 삭제, reset 함수 구현.
+-> 레시피 삭제 시 grocery remove 함수, reset 함수 구현.
 
 6. 프린터출력
 -> txt 파일로 입출력 (save_to_txt, load_from_txt)
@@ -45,10 +45,10 @@ void add_item(string name, float quantity, string unit) : add the item object on
 void update_item(const Recipe recipeName) : update the amount if food ingredients exist. if not, update the amount after adding the item ( 항목 업데이트 )
 void remove_item(const Recipe& recipe); remove the amount if food ingredients exist. and remove recipe object in grocerylist ( 항목 제거 )
 void reset_items() - deletes all the ingredients from the list ( 현재 Grocery_list 벡터를 초기화, load_from_file 함수 실행시 필요 )
-void save_to_txt() : write all groceries on txt file ( txt파일에 현재 groceryList를 저장함 )
-void load_from_txt() : load all groceries on txt file ( txt파일에 저장된 GroceryList를 불러옴 )
+void save_to_txt(const std::string& filename) const : write all groceries on txt file ( txt파일에 현재 groceryList를 저장함 )
+void load_from_txt(const std::string& filename) : load all groceries on txt file ( txt파일에 저장된 GroceryList를 불러옴 )
 
 
 * Private :
-vector<GroceryItem> items : a variable called vector-type items that can store multiple GroceryItem objects ( 추가된 식재료를 저장하는 벡터 )
-vector<Recipe> saved_recipes : a variable called vecotr-type recipes that can store multiple Recipe objects ( 추가된 레시피를 저장하는 벡터 )
+std::vector<GroceryItem> items : a variable called vector-type items that can store multiple GroceryItem objects ( 추가된 식재료를 저장하는 벡터 )
+std::vector<Recipe> saved_recipes : a variable called vecotr-type recipes that can store multiple Recipe objects ( 추가된 레시피를 저장하는 벡터 )
