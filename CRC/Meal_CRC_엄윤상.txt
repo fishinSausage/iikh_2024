@@ -63,9 +63,9 @@ addAllIngredientsToGroceryList()
     return: null
 
 ###################################################
-//프린터기에 출력하는 것이므로 텍스트파일 입출력을 활용해 주세요
-printMealInfo()
+toString()
     args: null
-    print all the information of this meal
-    return: null
+    return all the information of this meal by std::string
+        name of the meal, numGuests, recipes name/ or whole information included
+    return: std::string
 ###################################################
