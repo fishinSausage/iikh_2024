@@ -4,27 +4,25 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-using namespace std;
-
-class MealManager {
+#include <Date.h>
+#include <GroceryList.h>
 public:
-    // Date ÀÎ½ºÅÏ½ºÀÇ º¤ÅÍ (°¢ ³¯Â¥¿¡ ´ëÇÑ Á¤º¸¸¦ ÀúÀå)
+    // Date ì¸ìŠ¤í„´ìŠ¤ì˜ ë²¡í„° (ê° ë‚ ì§œì— ëŒ€í•œ ì •ë³´ë¥¼ ì €ì¥)
     vector<Date*> dates;
 
-    // »ı¼ºÀÚ
+    // ìƒì„±ì
     MealManager();
 
-    // ´Ş·Â Ãâ·Â ¹× °¢ ÀÛ¾÷À» ¼öÇàÇÒ ¼ö ÀÖ´Â ¸ŞÀÎ ¸Ş¼Òµå
+    // ë‹¬ë ¥ ì¶œë ¥ ë° ê° ì‘ì—…ì„ ìˆ˜í–‰í•  ìˆ˜ ìˆëŠ” ë©”ì¸ ë©”ì†Œë“œ
     void displayCalendar();
 
-    // ³¯Â¥ ¼±ÅÃ
+    // ë‚ ì§œ ì„ íƒ
     void selectDate();
 
-    // Æ¯Á¤ ±â°£ÀÇ ¸ğµç Meal Ãâ·Â
+    // íŠ¹ì • ê¸°ê°„ì˜ ëª¨ë“  Meal ì¶œë ¥
     void printMealsForDate();
 
-    // Æ¯Á¤ ±â°£ÀÇ Àåº¸±â ¸ñ·Ï Ãâ·Â
+    // íŠ¹ì • ê¸°ê°„ì˜ ì¥ë³´ê¸° ëª©ë¡ ì¶œë ¥
     void printGrocery();
 };
 
