@@ -130,6 +130,7 @@
     <ClInclude Include="Greeter.h" />
     <ClInclude Include="GroceryItem.h" />
     <ClInclude Include="GroceryList.h" />
+    <ClInclude Include="Meal.h" />
     <ClInclude Include="recipe.h" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +139,7 @@
     <ClCompile Include="GroceryItem.cpp" />
     <ClCompile Include="GroceryList.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Meal.cpp" />
     <ClCompile Include="Meal_Manager.cpp" />
     <ClCompile Include="recipe.cpp" />
     <ClCompile Include="Recipe_Database_Manager.cpp" />

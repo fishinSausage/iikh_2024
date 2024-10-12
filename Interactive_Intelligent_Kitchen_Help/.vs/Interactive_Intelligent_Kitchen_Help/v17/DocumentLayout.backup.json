@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Meal_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:GroceryItem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Recipe_Database_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Greeter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Meal_Manager.cpp",
+              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp",
+              "RelativeDocumentMoniker": "Meal_Manager.cpp",
+              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp",
+              "RelativeToolTip": "Meal_Manager.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T04:00:19.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Recipe_Database_Manager.cpp",
+              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp",
+              "RelativeDocumentMoniker": "Recipe_Database_Manager.cpp",
+              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp",
+              "RelativeToolTip": "Recipe_Database_Manager.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T04:03:37.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GroceryItem.cpp",
+              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp",
+              "RelativeDocumentMoniker": "GroceryItem.cpp",
+              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp",
+              "RelativeToolTip": "GroceryItem.cpp",
+              "ViewState": "AQIAABsAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T03:56:24.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Date.cpp",
+              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp",
+              "RelativeDocumentMoniker": "Date.cpp",
+              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp",
+              "RelativeToolTip": "Date.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T03:55:52.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T03:56:05.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Greeter.cpp",
+              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp",
+              "RelativeDocumentMoniker": "Greeter.cpp",
+              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp",
+              "RelativeToolTip": "Greeter.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T03:43:17.752Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Meal",
+      "appliesTo": "Interactive_Intelligent_Kitchen_Help/Meal.cpp",
+      "type": "launch"
+    }
+  ]
+}

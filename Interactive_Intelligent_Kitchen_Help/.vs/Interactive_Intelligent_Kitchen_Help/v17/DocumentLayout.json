@@ -1,102 +1,109 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\",
+  "WorkspaceRootPath": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Meal_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Meal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:GroceryList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Meal.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Greeter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Date.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:GroceryItem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Meal_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Recipe_Database_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Greeter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:Recipe_Database_Manager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:GroceryItem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:GroceryItem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\recipe.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F83330DB-432B-4744-8C9B-0CE86FD66335}|Interactive_Intelligent_Kitchen_Help.vcxproj|solutionrelative:recipe.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 144,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Meal_Manager.cpp",
-              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp",
-              "RelativeDocumentMoniker": "Meal_Manager.cpp",
-              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp",
-              "RelativeToolTip": "Meal_Manager.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-12T04:00:19.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Recipe_Database_Manager.cpp",
-              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp",
-              "RelativeDocumentMoniker": "Recipe_Database_Manager.cpp",
-              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp",
-              "RelativeToolTip": "Recipe_Database_Manager.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-12T04:03:37.384Z",
+              "DocumentIndex": 1,
+              "Title": "GroceryList.h",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryList.h",
+              "RelativeDocumentMoniker": "GroceryList.h",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryList.h",
+              "RelativeToolTip": "GroceryList.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAawAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-12T05:19:26.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GroceryItem.cpp",
-              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp",
-              "RelativeDocumentMoniker": "GroceryItem.cpp",
-              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp",
-              "RelativeToolTip": "GroceryItem.cpp",
-              "ViewState": "AQIAABsAAAAAAAAAAADwvwAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-12T03:56:24.404Z",
+              "Title": "Meal.h",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal.h",
+              "RelativeDocumentMoniker": "Meal.h",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal.h",
+              "RelativeToolTip": "Meal.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-12T05:15:08.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Date.cpp",
-              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp",
-              "RelativeDocumentMoniker": "Date.cpp",
-              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp",
-              "RelativeToolTip": "Date.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "Meal.cpp",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal.cpp",
+              "RelativeDocumentMoniker": "Meal.cpp",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal.cpp",
+              "RelativeToolTip": "Meal.cpp",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAAK4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-12T03:55:52.125Z",
+              "WhenOpened": "2024-10-12T05:07:16.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAABAAAA",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-12T03:56:05.327Z",
               "EditorCaption": ""
@@ -104,15 +111,103 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Meal_Manager.cpp",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp",
+              "RelativeDocumentMoniker": "Meal_Manager.cpp",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Meal_Manager.cpp",
+              "RelativeToolTip": "Meal_Manager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T04:00:19.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Date.cpp",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp",
+              "RelativeDocumentMoniker": "Date.cpp",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Date.cpp",
+              "RelativeToolTip": "Date.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T03:55:52.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Greeter.cpp",
-              "DocumentMoniker": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp",
               "RelativeDocumentMoniker": "Greeter.cpp",
-              "ToolTip": "C:\\Users\\USer\\Downloads\\git\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Greeter.cpp",
               "RelativeToolTip": "Greeter.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-12T03:43:17.752Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Recipe_Database_Manager.cpp",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp",
+              "RelativeDocumentMoniker": "Recipe_Database_Manager.cpp",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\Recipe_Database_Manager.cpp",
+              "RelativeToolTip": "Recipe_Database_Manager.cpp",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAACwAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T04:03:37.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GroceryItem.h",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.h",
+              "RelativeDocumentMoniker": "GroceryItem.h",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.h",
+              "RelativeToolTip": "GroceryItem.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-10-12T05:14:58.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GroceryItem.cpp",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp",
+              "RelativeDocumentMoniker": "GroceryItem.cpp",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\GroceryItem.cpp",
+              "RelativeToolTip": "GroceryItem.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T03:56:24.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "recipe.cpp",
+              "DocumentMoniker": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\recipe.cpp",
+              "RelativeDocumentMoniker": "recipe.cpp",
+              "ToolTip": "C:\\Users\\samsung\\newF\\iikh_2024\\Interactive_Intelligent_Kitchen_Help\\recipe.cpp",
+              "RelativeToolTip": "recipe.cpp",
+              "ViewState": "AgIAADQAAAAAAAAAAAAqwDwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-12T05:10:46.814Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 106,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
