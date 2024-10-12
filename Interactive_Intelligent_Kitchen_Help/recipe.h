@@ -1,3 +1,4 @@
+#pragma once
 #ifndef RECIPE_H
 #define RECIPE_H
 
@@ -7,7 +8,8 @@
 #include <vector>
 
 class Recipe {
-private:
+
+public:
     std::string name;                // 요리 이름
     std::string picture;             // 사진 경로 또는 파일 이름
     std::vector<GroceryItem> ingredients; // 재료 목록 (GroceryItem 객체로 구성)
@@ -15,7 +17,6 @@ private:
     int estimated_time;              // 예상 시간 (분 단위)
     std::vector<std::string> steps;  // 준비 단계
 
-public:
     // 생성자
     Recipe(std::string name, std::string picture, int serving_size, int estimated_time, std::vector<GroceryItem> ingredients, std::vector<std::string> steps);
 

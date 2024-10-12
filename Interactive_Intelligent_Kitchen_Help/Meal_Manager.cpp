@@ -25,7 +25,7 @@ public:
 
       for (int i = 0; i < 31; ++i) {
         if (dates[i] != nullptr) {
-          if (dates[i]->hasmeal()) {
+          if (dates[i]->hasMeal()) {
             cout << (i + 1) << "* ";
           }
         } else {
@@ -88,7 +88,7 @@ public:
     for (int i = startDate; i <= endDate; ++i) {
       if (dates[i - 1] != nullptr) {
         if (dates[i - 1]->hasMeal()) {
-          dates[i - 1]->displayMeals();
+          dates[i - 1]->display();
         }
       } else {
         cout << "No Meals For This Date" << endl;

@@ -24,16 +24,19 @@
     <ClInclude Include="GroceryList.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="recipe.h">
+    <ClInclude Include="Recipe.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Meal_Manager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="RecipeDataBase.h">
+    <ClInclude Include="RecipeDatabaseManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Date.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Meal.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -53,13 +56,16 @@
     <ClCompile Include="recipe.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Recipe_Database_Manager.cpp">
+    <ClCompile Include="RecipeDatabaseManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="GroceryList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Meal.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

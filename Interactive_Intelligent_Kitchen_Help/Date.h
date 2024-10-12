@@ -3,10 +3,10 @@
 #define DATE_H
 
 #include <vector>
+#include "Meal.h"
+#include "GroceryList.h"
 using namespace std;
 
-typedef int GroceryList;
-typedef int Meal;
 
 class Date {
 
@@ -28,6 +28,8 @@ public:
     // Add items to the grocery list
     void addToGroceryList(GroceryList grocerylist);
 
+
+    Date() = default;
 };
 
 #endif // DATE_H

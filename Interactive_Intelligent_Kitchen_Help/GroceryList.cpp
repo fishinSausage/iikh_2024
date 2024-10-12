@@ -146,7 +146,7 @@ void GroceryList::display() {     // 메인함수에서 실행할 함수.
             system("cls");
             switch (selected_option) {
             case 0: // Save to txt file
-                save_to_txt("grocerylist.txt");
+                print("grocerylist.txt");
                 break;
             case 1: // Reset GroceryList
                 reset_items();
@@ -162,7 +162,7 @@ void GroceryList::display() {     // 메인함수에서 실행할 함수.
     }
 }
 
-void GroceryList::save_to_txt(const std::string& filename) const {
+void GroceryList::print(const std::string& filename) const {
     std::ofstream file(filename);
     if (!file.is_open()) {
         std::cerr << "Error opening file for saving." << std::endl;

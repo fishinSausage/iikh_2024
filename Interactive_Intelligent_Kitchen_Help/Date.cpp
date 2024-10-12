@@ -1,11 +1,13 @@
 
 #include <vector>
 #include <iostream>
+#include "Meal.h"
+#include "GroceryList.h"
 using namespace std;
 
 // this code is unnecessary
-typedef int GroceryList;
-typedef int Meal;
+//typedef int GroceryList;
+//typedef int Meal;
 
 class Date {
 

@@ -1,5 +1,5 @@
 #include "Greeter.h"
-#include "RecipeDataBase.h"
+#include "RecipeDatabaseManager.h"
 #include "Meal_Manager.h"
 #include <iostream>
 
@@ -73,7 +73,8 @@ void Greeter::select_option()
                 break;
             case 2:
                 std::cout << "GroceryList selected.\n" << std::endl;
-                items.display();
+                GroceryList groceries;
+                groceries.display();
                 break;
             case 3:
                 std::cout << "Exit the IIKH.\n";
