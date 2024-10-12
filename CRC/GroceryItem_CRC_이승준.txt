@@ -27,6 +27,7 @@ Method Descriptions:
 - float get_quantity(): return GroceryItem object's quantity
 - const std::string get_unit(): return GroceryItem object's unit
 
+bool operator==(const GroceryItem& other) const : bool operator to compare groceryitem objects
 void add_quantity(float additional_quantity) :  If the same Grocery Item already exists in the GroceryList vector, just to add the amount
 
 std::string to_file_format() : convert GroceryItem objects to file format.
