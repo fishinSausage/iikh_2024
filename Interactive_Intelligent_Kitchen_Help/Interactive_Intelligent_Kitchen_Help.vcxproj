@@ -136,6 +136,7 @@
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="Greeter.cpp" />
     <ClCompile Include="GroceryItem.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Meal_Manager.cpp" />
     <ClCompile Include="recipe.cpp" />
     <ClCompile Include="Recipe_Database_Manager.cpp" />
