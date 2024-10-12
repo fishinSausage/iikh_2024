@@ -2,7 +2,8 @@
 #include "RecipeDataBase.h"
 #include "MealManager.h"
 #include <iostream>
-#include <conio.h>
+
+#include <string>
 
 void Greeter::show() // 메인함수에서 실행할 함수
 {
@@ -16,8 +17,8 @@ void Greeter::show() // 메인함수에서 실행할 함수
 void Greeter::print_greeting(int selected_option) // select_option에서 실행될 환영 메시지 및 안내 함수
 {
     std::cout << "Please select an option: " << std::endl;
-
-    std::string options[4] = {
+    
+    const char* options[4] = {
         "1. Recipe Data Base Manager",
         "2. Meal Manager",
         "3. Grocery List",
