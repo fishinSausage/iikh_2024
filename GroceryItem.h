@@ -17,6 +17,9 @@ public:
     float get_quantity() const;             // GroceryItem의 양을 반환하는 함수 
     const std::string get_unit() const;     // GroceryItem의 단위를 반환하는 함수
 
+    bool operator==(const GroceryItem& other) const {   //GroceryItem 객체 두개를 비교하는 연산 boolean 함수
+    return name == other.name && unit == other.unit && quantity == other.quantity;
+}
     void add_quantity(float additional_quantity);   // GroceryList에 이미 동일한 GroceryItem이 존재할 경우, 양만 추가해주기 위함.
 
     std::string to_file_format() const;                             // GroceryItem 객체를 파일 형식으로 변환.
