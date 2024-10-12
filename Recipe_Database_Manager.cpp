@@ -7,22 +7,18 @@
 
 
 
-class Recipe {
-public:
-	std::string name;
-};
-
-class GroceryList {
-
-};
-
-class Database {
+class RecipeDB {
 
 private:
 	std::vector<Recipe> recipes;
-	GroceryList Grocery;
+	GroceryList* Grocery;
 
 public:
+
+	RecipeDB(GroceryList* groceryList) {
+		Grocery = groceryList;
+	};// 생성자, Greeter의 GroceryList를 참조로 받아옴
+
 	void display() {
 
 
@@ -125,13 +121,13 @@ public:
 					}
 					else {
 
-						int recipeAction = (*searchRecipe(names[indexV])).displayRecipe(); //선택한 이름을 가진 레시피의 display를 호출. 레시피로 컨트롤이 넘어감. 이후 거기서 사용자가 선택한 액션에 따라 리턴됨
+						int recipeAction = (*searchRecipe(names[indexV])).display(); //선택한 이름을 가진 레시피의 display를 호출. 레시피로 컨트롤이 넘어감. 이후 거기서 사용자가 선택한 액션에 따라 리턴됨
 
 						if (recipeAction < 0) { //삭제를 선택한 경우
 							deleteRecipe(names[indexV]);
 						}
-						else if (displayRecipe()>0){ //GroceryList에 추가하는 경우. 이때는 리턴값이 인분 수가 됨
-							Grocery.update_item(*searchRecipe(names[indexV], recipeAction);
+						else if (recipeAction()>0){ //GroceryList에 추가하는 경우. 이때는 리턴값이 인분 수가 됨
+							*Grocery.update_item(*searchRecipe(names[indexV], recipeAction);
 						}
 					}
 
@@ -210,7 +206,7 @@ public:
 						steps.push_back(step);
 					}
 
-					addRecipe(Recipe(recipeName, picture, ingridients,servingSize, estimatedTime, steps)); //입력받은 값을 바탕으로 DB에 레시피 추가
+					addRecipe(Recipe(recipeName, picture, ingridients, servingSize, estimatedTime, steps)); //입력받은 값을 바탕으로 DB에 레시피 추가
 
 
 
@@ -265,7 +261,7 @@ public:
 };
 
 int main() {
-	Database db;
+	RecipeDB db;
 	Recipe a;
 	a.name = "a";
 	for (size_t i = 0; i < 7; i++)
