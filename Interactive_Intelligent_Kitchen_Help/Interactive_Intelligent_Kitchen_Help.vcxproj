@@ -127,8 +127,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Database.h" />
     <ClInclude Include="Date.h" />
-    <ClInclude Include="RecipeDataBase.h" />
     <ClInclude Include="Greeter.h" />
     <ClInclude Include="GroceryItem.h" />
     <ClInclude Include="GroceryList.h" />
@@ -136,6 +136,7 @@
     <ClInclude Include="recipe.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Database.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="Greeter.cpp" />
     <ClCompile Include="GroceryItem.cpp" />
@@ -143,7 +144,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Meal_Manager.cpp" />
     <ClCompile Include="recipe.cpp" />
-    <ClCompile Include="Recipe_Database_Manager.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
